@@ -1,0 +1,369 @@
+:root {
+
+    --loader-border-width: 0.25vw;
+
+    --bars-top-top: 5.25vw;
+    --bars-top-left: 24vw;
+
+    --bars-middle-top: 23vw;
+    --bars-middle-left: 21vw;
+
+    --bars-left-top: 28.75vw;
+    --bars-left-left: 0vw;
+    
+    --bottom-bars-left: 70vw;
+    --bottom-bars-top: 37.5vw;
+
+    --heading-size: 9.2vw;
+
+}
+
+.section-hero {
+    margin-top: var(--nav-height);
+    background-color: var(--color-background);
+    padding-top: 5vw;
+    padding-left: 5.5vw;
+}
+
+.section-hero-text {
+}
+
+.section-hero h1 {
+    font-family: 'Pragmatica';
+    font-weight: 900;
+    font-size: var(--heading-size);
+    z-index: 10;
+}
+
+.section-hero h1>p {
+    font-size: 6.6vw;
+    font-weight: 400;
+    margin-top: -2.4vw;
+    z-index: 10;
+}
+
+.section-hero>p {
+    margin-top: 12.5vw;
+    font-size: 2.3vw;
+    letter-spacing: -0.04vw;
+    padding-bottom: 5vw;
+    z-index: 10;
+}
+
+.bars-top, .bars-middle, .bars-left, .glowBar-bottom {
+    /*
+    isolation: isolate;
+    */
+    z-index: 5;
+}
+
+.bars-top {
+    position: absolute;
+    top: var(--bars-top-top);
+    left: var(--bars-top-left);
+}
+
+.section-hero-graphics,
+.graphic-bars,
+.graphic-rings {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*
+    background: green;
+    */
+}
+
+.glowBar-left-top {
+    width: 5.5vw;
+    transform: rotateZ(-45deg);
+}
+
+.bar-heading-to-glowBar {
+    top: -1.65vw;
+    left: 2vw;
+    width: 8.5vw;
+}
+
+.glowBar-top {
+    top: -1.65vw;
+    left: 7.5vw;
+    width: 42.5vw;
+    z-index: 2;
+}
+
+.bar-top-glowBar-to-blip {
+    top: -1.65vw;
+    left: 49vw;
+    width: 9vw;
+}
+
+.blip-hero-top {
+    left: 56vw;
+    top: -0.65vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--color-bars-light);
+    border-radius: 50%;
+}
+
+.blip-hero-top::after, .blip-glowbar-bottom::after {
+    position: absolute;
+    content: '';
+    border: 0.25vw solid var(--color-bars-light);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 50%;
+    animation: blip 2s forwards infinite ease-out;
+}
+
+.graphic-rings {
+    left: 55.5vw;
+    top: -16.75vw;
+    width: 21.5vw;
+    height: 21.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.graphic-ring-inner,
+.graphic-ring-small,
+.graphic-ring-big,
+.graphic-ring-outer {
+    position: absolute;
+    width: 21.5vw;
+}
+
+.graphic-ring-inner {
+    width: 16vw;
+    animation: rotateInner 10s linear infinite forwards;
+}
+
+.graphic-ring-small {
+    width: 19vw;
+    animation: rotatex2 10s linear infinite forwards;
+}
+
+.graphic-ring-big {
+    width: 19vw;
+    animation: rotate 10s linear infinite forwards;
+}
+
+.bars-middle {
+    position: absolute;
+    top: var(--bars-middle-top);
+    left: var(--bars-middle-left);
+}
+
+.bar-blip-to-battery {
+    width: 17.25vw;
+}
+
+.bar-blip-to-battery-bar {
+    position: absolute;
+    content: '';
+    left: 17.25vw;
+    width: 25vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+}
+
+.bar-battery {
+    top: -2.8vw;
+    left: 41.5vw;
+    width: 6vw;
+    height: 3vw;
+}
+
+.bar-battery>img {
+    width: 100%;
+    height: 100%;
+}
+
+.bar-battery-fills {
+    position: absolute;
+    top: 0.5vw;
+    left: 0.4vw;
+    width: 4.2vw;
+    height: 1.95vw;
+}
+
+.bar-battery-fill-01, .bar-battery-fill-02, .bar-battery-fill-03 {
+    position: absolute;
+
+    width: 1.26vw;
+    height: 1.95vw;
+    background-color: var(--color-bars-light);
+    border-radius: 0.25vw;
+    opacity: 0;
+}
+
+.bar-battery-fill-01 {
+    left: 0.21vw;
+    animation: batteryFill01 6s linear infinite backwards;
+}
+
+.bar-battery-fill-02 {
+    left: 1.68vw;
+    animation: batteryFill02 6s linear infinite backwards;
+}
+
+.bar-battery-fill-03 {
+    left: 3.15vw;
+    animation: batteryFill03 6s linear infinite backwards;
+}
+
+.bar-battery-to-ring {
+    left: 47.5vw;
+    top: -1.25vw;
+    width: 18vw;
+}
+
+.glowBar-below-rings {
+    top: 5.9vw;
+    left: 64.6vw;
+    width: 2vw;
+    transform: rotateZ(90deg);
+}
+
+.bar-loader {
+    left: 18.3vw;
+    top: 2.5vw;
+    width: 30vw;
+    height: 3vw;
+    border: var(--loader-border-width) solid var(--color-bars-light);
+}
+
+.bar-loader-corners {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.bar-loader-corners div {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.bar-loader-corners div:nth-last-of-type(1) {
+    top: -1vw;
+    right: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: var(--loader-border-width) var(--loader-border-width) 0 0;
+}
+
+.bar-loader-corners div:nth-last-of-type(2) {
+    bottom: -1vw;
+    left: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: 0 0 var(--loader-border-width) var(--loader-border-width);
+}
+
+.bar-loader-corners div:nth-last-of-type(3) {
+    bottom: -1vw;
+    right: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: 0 var(--loader-border-width) var(--loader-border-width) 0;
+}
+
+.bar-loader-corners div:nth-last-of-type(4) {
+    top: -1vw;
+    left: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: var(--loader-border-width) 0 0 var(--loader-border-width);
+}
+
+.bar-loader-bar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    z-index: 10;
+    margin: 0.5vw;
+    background-color: var(--color-bars-light);
+    animation: barFill 4s forwards infinite ease-out;
+}
+
+.bars-left {
+    position: absolute;
+    top: var(--bars-left-top);
+    left: var(--bars-left-left);
+}
+
+.glowBar-left-top-lower {
+    left: -6.6vw;
+    width: 20vw;
+    transform: rotateZ(-45deg);
+}
+
+.glowBar-left-bottom {
+    top: 2.25vw;
+    left: -6.6vw;
+    width: 20vw;
+    transform: rotateZ(-45deg);
+}
+
+.glowBar-bottom {
+    position: absolute;
+    left: var(--bottom-bars-left);
+    top: var(--bottom-bars-top);
+    width: 1px;
+    height: 13.5vw;
+}
+
+.glowBar-bottom-glowBar {
+    top: 6vw;
+    left: -6vw;
+    width: 12vw;
+    transform: rotateZ(90deg);
+}
+
+.blip-glowbar-bottom {
+    position: absolute;
+    bottom: 0;
+    left: -1vw;
+    width: 2vw;
+    height: 2vw;
+    background-color: var(--color-bars-light);
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.blip-glowbar-bottom::after {
+    animation-delay: 0.5s;
+}
+
+@media only screen and (max-width: 720px) {
+    :root {
+        --heading-size: 12vw;
+
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+    :root {
+    --bars-top-top: 5.25vw;
+    --bars-top-left: 24vw;
+
+    --bars-middle-top: 23vw;
+    --bars-middle-left: 21vw;
+
+    --bars-left-top: 28.75vw;
+    --bars-left-left: 0vw;
+    
+    --bottom-bars-top: 68vh;
+    --bottom-bars-left: 80vw;
+    }
+
+    .section-hero {
+        /*
+        background-color: orange;
+        */
+    }
+}

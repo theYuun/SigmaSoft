@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Pragmatica';
+    src:
+        local('Pragmatica'),
+            url('./Fonts/PragmaticaExtendedBold.otf')
+            format('opentype');
+}
+
+@font-face {
+    font-family: 'Museo';
+    src:
+        local('Museo'),
+            url('./Fonts/MuseoSans_500.otf')
+            format('opentype');
+    font-weight: 500
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src:
+        local('Montserrat'),
+            url('./Fonts/Montserrat-Bold.ttf')
+            format('opentype');
+    font-weight: 700;
+}
+
+.fonts {
+    padding: 10vw;
+}
+
+.pragmatica {
+    font-family: 'Pragmatica';
+}
+
+.museo {
+    font-family: 'Museo';
+}
+
+.montserrat {
+    font-family: 'Montserrat';
+}

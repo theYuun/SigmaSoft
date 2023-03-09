@@ -1,0 +1,194 @@
+:root {
+    --nav-height: 12.6vw;
+    
+    --color-background: #0a1c29;
+    --color-bars-light: #17e2f7;
+    --color-bars-dark: #194666;
+    --color--accent-01: #0f2a3d;
+    --color--accent-02: #143852;
+    --color--accent-03: #1e547a;
+
+    --animation-blip-scale: 250%;
+}
+
+@keyframes blip {
+    0% {
+        transform: scale(0%, 0%);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: scale(var(--animation-blip-scale));
+        opacity: 0;
+    }
+}
+
+@keyframes rotateInner {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(360deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotatex2 {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(720deg);
+    }
+    100% {
+        transform: rotateZ(720deg);
+    }
+}
+
+@keyframes batteryFill01 {
+    10% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes batteryFill02 {
+    20% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes batteryFill03 {
+    30% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes barFill {
+    0% {
+        left: 100%;
+        right: 0%;
+    }
+    25% {
+        left: 0%;
+        right: 0%;
+    }
+    50% {
+        left: 0%;
+        right: 100%;
+    }
+    100% {
+        left: 0%;
+        right: 100%;
+    }
+}
+
+*, *::before, *::after, *:visited {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fefcf9;
+    font-family: 'Museo';
+}
+
+.spacer {
+    flex: 1;
+}
+
+body {
+    height: 120vh;
+}
+
+section {
+    position: relative;
+    width: 100%;
+}
+
+.section-results {
+    background-color: #0a1c29;
+    
+}
+
+.section-together {
+
+}
+
+.section-familiar {
+
+}
+
+.section-tech {
+
+}
+
+.section-stressed {
+
+}
+
+.section-harness {
+
+}
+
+.section-freedom {
+
+}
+
+.section-client {
+
+}
+
+footer {
+
+}
