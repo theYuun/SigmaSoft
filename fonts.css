@@ -1,35 +1,70 @@
 @font-face {
-    font-family: 'Pragmatica';
-    src:
-        local('Pragmatica'),
-            url('./Fonts/PragmaticaExtendedBold.otf')
-            format('opentype');
+    font-family: 'Pragmatica-Bold';
+    src: url('./Fonts/PragmaticaExt/PragmaticaExtendedBold.otf');
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Museo';
+    font-family: 'Pragmatica-Book';
+    src: url('./Fonts/PragmaticaExt/PragmaticaExtended-Book.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Pragmatica-Light';
+    src: url('./fonts/PragmaticaExt/PragmaticaExtended-Light.ttf');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Pragmatica-Light-Oblique';
+    src: url('./fonts/PragmaticaExt/PragmaticaExtended-LightOblique.ttf');
+    font-weight: 200;
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: 'Museo-Bold';
     src:
-        local('Museo'),
-            url('./Fonts/MuseoSans_500.otf')
-            format('opentype');
+        url('./Fonts/MuseoSans_700.otf');
+    font-weight: 700
+}
+
+@font-face {
+    font-family: 'Museo-Med';
+    src:
+        url('./Fonts/MuseoSans_500.otf');
     font-weight: 500
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Museo-Light';
     src:
-        local('Montserrat'),
-            url('./Fonts/Montserrat-Bold.ttf')
-            format('opentype');
+        url('./Fonts/MuseoSans_300.otf');
+    font-weight: 300
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src:
+        url('./Fonts/Montserrat-Bold.ttf');
     font-weight: 700;
 }
 
-.fonts {
-    padding: 10vw;
+.pragmatica-r {
+    font-family: 'Pragmatica-Book';
 }
 
-.pragmatica {
-    font-family: 'Pragmatica';
+.pragmatica-b {
+    font-family: 'Pragmatica-Bold';
+}
+
+.pragmatica-l {
+    font-family: 'Pragmatica-Light';
+}
+
+.pragmatica-lo {
+    font-family: 'Pragmatica-Light-Oblique';
 }
 
 .museo {

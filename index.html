@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="results.css">
     <link rel="stylesheet" href="glowbar.css">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="reference.css">
@@ -24,14 +25,14 @@
     <title>Sigmasoft</title>
 </head>
 <body>
-    <nav class="nav">
+    <nav class="nav museo">
         <div class="nav-logo">
             <img src="./images/logoPart-01.svg" alt="" class="nav-logo-01">
             <img src="./images/logoPart-02.svg" alt="" class="nav-logo-02">
         </div>
         <div class="spacer"></div>
         <div class="nav-links">
-            <div class="nav-links-hamburger">
+            <div class="nav-links-hamburger" onclick="OpenMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -44,11 +45,13 @@
         </div>
     </nav>
     <section class="section-hero">
-        <h1>
-            More Time
-            <p>For More Business</p>
-        </h1>
-        <p><span>HUMAN-FRIENDLY</span> SOFTWARE SOLUTIONS IN AUSTRALIA</p>
+        <div class="section-hero-text">
+            <h1>
+                More Time
+                <p>For More Business</p>
+            </h1>
+            <p><span>HUMAN-FRIENDLY</span> SOFTWARE SOLUTIONS IN AUSTRALIA</p>
+        </div>
         <div class="section-hero-graphics" >
             <div class="bars-top">
                 <div class="graphic-bars glowBar-left-top glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
@@ -62,7 +65,6 @@
                 <div class="graphic-bars bar-blip-to-battery-bar"></div>
                 <div class="graphic-bars bar-battery">
                     <img src="./images/graphic-bars-battery.svg" alt="">
-                    
                     <div class="graphic-bars bar-battery-fills">
                         <div class="graphic-bars bar-battery-fill-01"></div>
                         <div class="graphic-bars bar-battery-fill-02"></div>
@@ -102,7 +104,29 @@
             -->
         </div>
     </section>
-    <section class="section-results"></section>
+    <section class="section-results">
+        <div class="results-text">
+            <h2>Smarter. Faster. Better.
+            </h2>
+            <em>Same Business, Radically Different Results</em>
+            <p>
+                At SigmaSoft, we create apps, websites, and programs that look good and are easy to use, while helping you stay relevant and up-to-date with your customers.
+            </p>
+            <p>
+                Best of all you'll have way more time to do way more business.
+            </p>
+            <p>
+                Here to contribute to the bright future of Australia through software development, our passion is boosting local businesses with robust tech that yields positive ROI.
+            </p>
+            <p>
+                Buckle up!
+            </p>
+            <h3>Keen to game-change your business with stellar results?</h3>
+        </div>
+        <div class="graphics">
+            <div class="graphic-bars glowBar-results glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+        </div>
+    </section>
     <section class="section-together"></section>
     <section class="section-familiar"></section>
     <section class="section-tech"></section>
@@ -123,6 +147,11 @@
         <img src="./images/ref/9.svg" alt="">
         <img src="./images/ref/10.svg" alt="">
     </div>
-    
+    <script type="text/javascript">
+        function OpenMenu()
+        {
+            document.querySelector('.nav-links-container').classList.toggle('open-menu');
+        }
+    </script>
 </body>
 </html>

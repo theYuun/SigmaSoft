@@ -5,7 +5,7 @@
     --bars-top-top: 5.25vw;
     --bars-top-left: 24vw;
 
-    --bars-middle-top: 23vw;
+    --bars-middle-top: 22.5vw;
     --bars-middle-left: 21vw;
 
     --bars-left-top: 28.75vw;
@@ -19,35 +19,49 @@
 }
 
 .section-hero {
+    position: relative;
     margin-top: var(--nav-height);
     background-color: var(--color-background);
+    /*
     padding-top: 5vw;
     padding-left: 5.5vw;
+    */
+    width: 100%;
 }
 
 .section-hero-text {
+    padding-top: 5vw;
+    padding-left: 5.5vw;
+    /*
+    background-color: orange;
+    */
 }
 
-.section-hero h1 {
-    font-family: 'Pragmatica';
+.section-hero-text h1 {
     font-weight: 900;
     font-size: var(--heading-size);
     z-index: 10;
 }
 
-.section-hero h1>p {
+.section-hero-text h1>p {
     font-size: 6.6vw;
     font-weight: 400;
     margin-top: -2.4vw;
     z-index: 10;
 }
 
-.section-hero>p {
-    margin-top: 12.5vw;
+.section-hero-text>p {
+    /*
+    */
+    margin-top: 12.2vw;
     font-size: 2.3vw;
     letter-spacing: -0.04vw;
     padding-bottom: 5vw;
     z-index: 10;
+}
+
+.section-hero-text>p>span {
+    color: var(--color-bars-light);
 }
 
 .bars-top, .bars-middle, .bars-left, .glowBar-bottom {
@@ -63,15 +77,18 @@
     left: var(--bars-top-left);
 }
 
-.section-hero-graphics,
-.graphic-bars,
-.graphic-rings {
+.section-hero-graphics {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    width: 100%;
+    height: 100%;
+    top: 0;
     /*
-    background: green;
+    background-color: orange;
     */
+
+}
+.graphic-bars {
+    position: absolute;
 }
 
 .glowBar-left-top {
@@ -118,14 +135,14 @@
 }
 
 .graphic-rings {
-    left: 55.5vw;
-    top: -16.75vw;
-    width: 21.5vw;
-    height: 21.5vw;
+    position: absolute;
+    right: -1.5vw;
+    top: -9.5vw;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .graphic-ring-inner,
@@ -155,6 +172,8 @@
     position: absolute;
     top: var(--bars-middle-top);
     left: var(--bars-middle-left);
+    width: 66.5vw;
+    height: 8vw;
 }
 
 .bar-blip-to-battery {
@@ -163,16 +182,15 @@
 
 .bar-blip-to-battery-bar {
     position: absolute;
-    content: '';
     left: 17.25vw;
-    width: 25vw;
+    width: 23.75vw;
     height: 0.25vw;
     background-color: var(--color-bars-light);
 }
 
 .bar-battery {
-    top: -2.8vw;
-    left: 41.5vw;
+    top: -2.7vw;
+    left: 40.75vw;
     width: 6vw;
     height: 3vw;
 }
@@ -216,15 +234,15 @@
 }
 
 .bar-battery-to-ring {
-    left: 47.5vw;
+    left: 46.75vw;
     top: -1.25vw;
     width: 18vw;
 }
 
 .glowBar-below-rings {
-    top: 5.9vw;
-    left: 64.6vw;
-    width: 2vw;
+    top: 5.7vw;
+    left: 63.5vw;
+    width: 2.5vw;
     transform: rotateZ(90deg);
 }
 

@@ -2,6 +2,7 @@
     --nav-height: 12.6vw;
     
     --color-background: #0a1c29;
+    --color-background-light: #13324b;
     --color-bars-light: #17e2f7;
     --color-bars-dark: #194666;
     --color--accent-01: #0f2a3d;
@@ -140,7 +141,6 @@
     box-sizing: border-box;
     text-decoration: none;
     color: #fefcf9;
-    font-family: 'Museo';
 }
 
 .spacer {
