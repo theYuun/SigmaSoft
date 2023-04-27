@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "theYuun/SigmaSoft",
+  "pipelineDirectory": "SigmaSoft",
+  "workspaceDirectory": "SigmaSoft\\SigmaSoft",
+  "repositories": {
+    "theYuun/SigmaSoft": {
+      "repositoryPath": "SigmaSoft\\SigmaSoft",
+      "lastRunOn": "04/27/2023 23:43:51 +02:00"
+    }
+  },
+  "lastRunOn": "04/27/2023 23:43:51 +02:00"
+}
