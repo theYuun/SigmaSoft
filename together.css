@@ -1,0 +1,263 @@
+.section-together {
+    padding-right: 5.5vw;
+    text-align: right;
+}
+
+.section-together h2 {
+    color: var(--color-background);
+    font-size: 4vw;
+    margin-top: 3.25vw;
+    letter-spacing: -0.2vw;
+}
+
+.section-together h3 {
+    color: var(--color-background);
+    font-size: 2.35vw;
+    letter-spacing: -0.02vw;
+}
+
+.section-together p {
+    color: var(--color-background);
+}
+
+.section-together span {
+    color: var(--color-background);
+    text-decoration: underline;
+}
+
+.together-content {
+    position: relative;
+    padding: 0.5vw;
+
+    width: 80vw;
+    margin-top: 3.75vw;
+    margin-bottom: 2vw;
+    margin-left: 14vw;
+
+    font-size: 2vw;
+    text-align: right;
+    color: var(--color-text-default);
+    
+    background-color: var(--color-accent-01);
+}
+
+.together-content p {
+    margin-top: 2.75vw;
+    margin-left: 2.5vw;
+    margin-right: 0.5vw;
+    line-height: 2.5vw;
+    color: var(--color-text-default);
+    letter-spacing: 0.01vw;
+}
+.together-content p:nth-child(2) {
+    margin-top: 2.5vw;
+    letter-spacing: 0.025vw;
+}
+.together-content p:nth-child(3) {
+    margin-top: 2.35vw;
+    line-height: 2.4vw;
+    margin-bottom: 1.5vw;
+}
+
+.together-content::before {
+    z-index: -1;
+    position: absolute;
+    content:'';
+    background-color: var(--color-accent-02);
+    
+    top: 3.5vw;
+    right: 2.5vw;
+    bottom: -2.5vw;
+    left: -2.5vw;
+}
+
+.together-content::after {
+    position: absolute;
+    top: 7.5vw;
+    right: 4.5vw;
+    bottom: -5vw;
+    left: -4.5vw;
+
+    content:'';
+    
+    background-color: var(--color-accent-03);
+
+    z-index: -2;
+}
+
+.together-graphics {
+    position: absolute;
+    inset: 0;
+}
+
+.together-graphics .blip {
+    top: 21vw;
+    left: 17.75vw;
+}
+
+.together-graphics .blip > div {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 0.125vw);
+    width: 13.5vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: left;
+    transform: rotateZ(180deg);
+}
+
+.together-graphics .blip > div > div:nth-child(1) {
+    content: '';
+    position: absolute;
+    left: 0.4vw;
+    top: calc(50% - 0.125vw);
+    width: 13vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: right;
+    transform: rotateZ(135deg);
+}
+
+.together-graphics .blip > div > div:nth-child(2) {
+    position: absolute;
+    top: -1.25vw;
+    left: 0.4vw;
+    width: 13vw;
+    height: 0.25vw;
+    background-color: var(--color-accent-01);
+    transform-origin: right;
+    transform: rotateZ(135deg);
+}
+
+.together-graphics-bars-lower {
+    position: absolute;
+    left: 0;
+    bottom: -1.75vw;
+}
+.together-graphics-bars-lower > svg {
+    position: absolute;
+    bottom: -2.5vw;
+    left: -12.75vw;
+    /*
+    */
+    width: 30.5vw;
+    height: 13.5vw;
+    transform: rotateY(180deg);
+}
+.together-graphics-bars-lower::after {
+    content: '';
+    position: absolute;
+    height: 0.25vw;
+    width: 23.5vw;
+    transform: rotate(-45deg);
+    background-color: var(--color-accent-03);
+    left: -2.25vw;
+    top: 0;
+}
+.together-graphics-bars-lower polygon {
+    fill: var(--color-bars-light);
+}
+
+.graphic-bars-lower-bar-middle,
+.graphic-bars-lower-bar-bottom,
+.graphic-bars-lower-bar-dark
+{
+    position: absolute;
+    transform-origin: 100% 0%;
+    background-color: var(--color-bars-light);
+}
+
+.graphic-bars-lower-bar-middle {
+    top: 6vw;
+    left: -2.25vw;
+    width: 1.70vw;
+    height: 10vw;
+    transform: rotate(45deg);
+}
+.graphic-bars-lower-bar-dark {
+    top: 3.25vw;
+    left: -0vw;
+    width: 0.3vw;
+    height: 20vw;
+    transform: rotate(45deg);
+    background-color: var(--color-accent-01)
+}
+.graphic-bars-lower-bar-bottom {
+    top: 13.7vw;
+    left: -22vw;
+    width: 10vw;
+    height: 0.3vw;
+}
+
+.together-text-bottom {
+    margin-top: 8vw;
+    font-size: 2vw;
+    letter-spacing: -0.01vw;
+    margin-bottom: 6vw;
+}
+
+@media screen and (max-width: 750px) {
+    .section-together h2 {
+        font-size: 8vw;
+    }
+    .section-together h3 {
+        font-size: 5vw;
+    }
+    .section-together p {
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .together-content {
+        padding: 1vw;
+
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    .together-content::before {
+        right: 2.5vw;
+        bottom: -2.5vw;
+        left: 2.5vw;
+    }
+    .together-content::after {
+        right: 5vw;
+        bottom: -5vw;
+        left: 5vw;
+    }
+
+    .together-graphics .blip {
+        top: 50vw;
+        left: 10vw;
+    }
+    
+    .together-graphics .blip > div {
+        position: absolute;
+        left: 0.25vw;
+        top: 50%;
+        width: 7vw;
+        height: 0.25vw;
+        background-color: var(--color-bars-light);
+        transform: rotateZ(180deg);
+    }
+    
+    .together-graphics .blip > div > div:nth-child(1) {
+        position: absolute;
+        left: -3.125vw;
+        top: calc(50% - 0.125vw);
+        width: 10vw;
+        height: 0.25vw;
+        background-color: var(--color-bars-light);
+        transform-origin: right;
+        transform: rotateZ(135deg);
+    }
+    
+    .together-graphics .blip > div > div:nth-child(2) {
+        position: absolute;
+        top: -1.25vw;
+        left: -3.125vw;
+        width: 10vw;
+        height: 0.25vw;
+        background-color: var(--color-accent-01);
+        transform-origin: right;
+        transform: rotateZ(135deg);
+    }
+}

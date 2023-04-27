@@ -1,0 +1,122 @@
+.section-freedom {
+    position: relative;
+    padding: 5.5vw;
+    padding-bottom: 4vw;
+    background-color: var(--color-background);
+}
+
+.section-freedom h2 {
+    font-size: 3.5vw;
+    text-align: center;
+    letter-spacing: 0.1vw;
+}
+
+.freedom-content {
+    margin-top: 5vw;
+}
+
+.freedom-content-blocks {
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.freedom-content-block {
+    display: grid;
+    grid-template-columns: 24.25vw 1fr;
+}
+
+.freedom-content-block h3 {
+    margin-top: 2vw;
+    font-size: 2.25vw;
+    font-weight: 300;
+}
+
+.freedom-content-block p {
+    border: 0.75vw solid var(--color-bars-light);
+    padding: 1.5vw 0.9vw;
+    letter-spacing: 0.03vw;
+    font-weight: 100;
+    line-height: 2.1vw;
+    color: #fff;
+
+}
+
+.freedom-content button {
+    position: relative;
+    margin-top: 3.5vw;
+    margin-left: 80.5%;
+    width: 17.5vw;
+    height: 4vw;
+    border: none;
+    color: #000;
+}
+
+.freedom-content button p {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    color: #000;
+    background-color: var(--color-bars-light);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.freedom-graphics {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 5.5vw;
+}
+
+.freedom-graphics-top {
+    position: absolute;
+    top: 10.5vw;
+    right: -3.75vw;
+
+    transform: rotate(90deg);
+    height: 6vw;
+}
+
+.freedom-graphics-bottom {
+    position: absolute;
+    bottom: 6vw;
+    right: -3.75vw;
+
+    transform: rotate(90deg) scaleX(-1);
+    height: 6vw;
+}
+
+@media screen and (max-width: 750px) {
+    .section-freedom {
+        padding-top: 10vw;
+    }
+
+    .section-freedom h2 {
+        font-size: 10vw;
+    }
+
+    .freedom-content-block {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3vw 1fr;
+    }
+
+    .freedom-content-block h3 {
+        margin-top: 0vw;
+        font-size: 7vw;
+    }
+    .freedom-content-block p {
+        margin-top: 5vw;
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+}

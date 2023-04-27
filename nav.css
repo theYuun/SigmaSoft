@@ -52,10 +52,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    /*
-    width: 12vw;
-    background-color: yellow;
-    */
+    margin-right: 3.5vw;
 }
 
 .nav-links-hamburger {
@@ -66,9 +63,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    /*
-    background-color: blue;
-    */
 }
 
 .nav-links-hamburger div {
@@ -110,6 +104,7 @@
 
     .nav-links {
         flex-direction: column;
+        margin-right: 0;
     }
 
     .nav-links-hamburger:hover {

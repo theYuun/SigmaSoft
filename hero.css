@@ -1,148 +1,117 @@
-:root {
-
-    --loader-border-width: 0.25vw;
-
-    --bars-top-top: 5.25vw;
-    --bars-top-left: 24vw;
-
-    --bars-middle-top: 22.5vw;
-    --bars-middle-left: 21vw;
-
-    --bars-left-top: 28.75vw;
-    --bars-left-left: 0vw;
-    
-    --bottom-bars-left: 70vw;
-    --bottom-bars-top: 37.5vw;
-
-    --heading-size: 9.2vw;
-
-}
-
 .section-hero {
     position: relative;
     margin-top: var(--nav-height);
     background-color: var(--color-background);
-    /*
-    padding-top: 5vw;
-    padding-left: 5.5vw;
-    */
     width: 100%;
-}
-
-.section-hero-text {
+    height: auto;
     padding-top: 5vw;
     padding-left: 5.5vw;
-    /*
-    background-color: orange;
-    */
-}
-
-.section-hero-text h1 {
-    font-weight: 900;
-    font-size: var(--heading-size);
-    z-index: 10;
-}
-
-.section-hero-text h1>p {
-    font-size: 6.6vw;
-    font-weight: 400;
-    margin-top: -2.4vw;
-    z-index: 10;
-}
-
-.section-hero-text>p {
-    /*
-    */
-    margin-top: 12.2vw;
-    font-size: 2.3vw;
-    letter-spacing: -0.04vw;
     padding-bottom: 5vw;
-    z-index: 10;
 }
 
-.section-hero-text>p>span {
+.hero-content {
+    position: relative;
+    isolation: isolate;
+    z-index: var(--z-content);
+}
+
+.hero-content h2 {
+    font-size: 5.75vw;
+    margin-top: -0.6vw;
+}
+
+.hero-content h3 {
+    margin-top: 13vw;
+    letter-spacing: -0.03vw;
+}
+
+.hero-content h3 > span {
     color: var(--color-bars-light);
 }
 
-.bars-top, .bars-middle, .bars-left, .glowBar-bottom {
-    /*
-    isolation: isolate;
-    */
-    z-index: 5;
+.hero-graphics {
+    position: absolute;
+    inset: 0;
+}
+
+.bars-top > div, .bars-top > img,
+.bars-middle > div, .bars-middle > img,
+.bars-left > div, .bars-left > img,
+.glowBar-bottom > div, .glowBar-bottom > img {
+    position: absolute;
 }
 
 .bars-top {
     position: absolute;
-    top: var(--bars-top-top);
-    left: var(--bars-top-left);
-}
-
-.section-hero-graphics {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    /*
-    background-color: orange;
-    */
-
-}
-.graphic-bars {
-    position: absolute;
+    top: 3.75vw;
+    left: 23.5vw;
+    width: 60vw;
+    height: 5vw;
 }
 
 .glowBar-left-top {
     width: 5.5vw;
+    top: -0.25vw;
+    left: -0.75vw;
+    transform-origin: right;
     transform: rotateZ(-45deg);
 }
 
 .bar-heading-to-glowBar {
-    top: -1.65vw;
-    left: 2vw;
-    width: 8.5vw;
+    left: 6vw;
+    width: 2vw;
+    height: 3.8vw;
+    transform-origin: 0% 0%;
+    transform: skew(-45deg);
+    background-color: var(--color-bars-light);
 }
 
 .glowBar-top {
-    top: -1.65vw;
     left: 7.5vw;
     width: 42.5vw;
-    z-index: 2;
 }
 
-.bar-top-glowBar-to-blip {
-    top: -1.65vw;
-    left: 49vw;
-    width: 9vw;
+.bar-glowbar-top-to-blip {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 2.75vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: left;
+    transform: rotate(45deg);
+}
+.bar-glowbar-top-to-blip > div {
+    position: absolute;
+    top: vw;
+    left: 100%;
+    width: 5vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: left;
+    transform: rotate(-45deg);
 }
 
-.blip-hero-top {
-    left: 56vw;
-    top: -0.65vw;
+.bars-top .blip {
+    left: 56.5vw;
+    top: 1vw;
     width: 2vw;
     height: 2vw;
     background-color: var(--color-bars-light);
     border-radius: 50%;
 }
 
-.blip-hero-top::after, .blip-glowbar-bottom::after {
-    position: absolute;
-    content: '';
-    border: 0.25vw solid var(--color-bars-light);
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    animation: blip 2s forwards infinite ease-out;
-}
-
 .graphic-rings {
     position: absolute;
-    right: -1.5vw;
-    top: -9.5vw;
-    width: 50px;
-    height: 50px;
+    right: -9vw;
+    top: -16.5vw;
+    width: 21.25vw;
+    height: 21.25vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    isolation: isolate;
+    z-index: var(--z-graphics);
 }
 
 .graphic-ring-inner,
@@ -150,108 +119,92 @@
 .graphic-ring-big,
 .graphic-ring-outer {
     position: absolute;
-    width: 21.5vw;
+    width: 100%;
 }
 
 .graphic-ring-inner {
-    width: 16vw;
+    width: 75%;
     animation: rotateInner 10s linear infinite forwards;
 }
 
 .graphic-ring-small {
-    width: 19vw;
+    width: 90%;
     animation: rotatex2 10s linear infinite forwards;
 }
 
 .graphic-ring-big {
-    width: 19vw;
+    width: 90%;
     animation: rotate 10s linear infinite forwards;
 }
 
 .bars-middle {
     position: absolute;
-    top: var(--bars-middle-top);
-    left: var(--bars-middle-left);
+    top: 22.5vw;
+    left: 21vw;
     width: 66.5vw;
     height: 8vw;
 }
 
-.bar-blip-to-battery {
-    width: 17.25vw;
+.bars-middle .blip {
+    left: 0;
+    top: 4.75vw;
 }
-
-.bar-blip-to-battery-bar {
+.bars-middle .blip > div {
     position: absolute;
-    left: 17.25vw;
-    width: 23.75vw;
+    top: 50%;
+    left: 100%;
+    width: 10.25vw;
     height: 0.25vw;
     background-color: var(--color-bars-light);
 }
+.bars-middle .blip > div > div {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 7.5vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: left;
+    transform: rotate(-45deg);
+}
+.bars-middle .blip > div > div > div {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 25vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    transform-origin: left;
+    transform: rotate(45deg);
+}
 
-.bar-battery {
-    top: -2.7vw;
-    left: 40.75vw;
+.bars-middle .battery {
+    top: -2.25vw;
+    left: 41vw;
     width: 6vw;
     height: 3vw;
 }
 
-.bar-battery>img {
-    width: 100%;
-    height: 100%;
-}
-
-.bar-battery-fills {
-    position: absolute;
-    top: 0.5vw;
-    left: 0.4vw;
-    width: 4.2vw;
-    height: 1.95vw;
-}
-
-.bar-battery-fill-01, .bar-battery-fill-02, .bar-battery-fill-03 {
-    position: absolute;
-
-    width: 1.26vw;
-    height: 1.95vw;
-    background-color: var(--color-bars-light);
-    border-radius: 0.25vw;
-    opacity: 0;
-}
-
-.bar-battery-fill-01 {
-    left: 0.21vw;
-    animation: batteryFill01 6s linear infinite backwards;
-}
-
-.bar-battery-fill-02 {
-    left: 1.68vw;
-    animation: batteryFill02 6s linear infinite backwards;
-}
-
-.bar-battery-fill-03 {
-    left: 3.15vw;
-    animation: batteryFill03 6s linear infinite backwards;
-}
-
 .bar-battery-to-ring {
-    left: 46.75vw;
-    top: -1.25vw;
+    left: 46.5vw;
+    top: -1vw;
     width: 18vw;
 }
 
 .glowBar-below-rings {
-    top: 5.7vw;
-    left: 63.5vw;
+    bottom: 0.4vw;
+    right: -1.75vw;
     width: 2.5vw;
-    transform: rotateZ(90deg);
+    transform-origin: left;
+    transform: rotateZ(-90deg);
 }
 
 .bar-loader {
-    left: 18.3vw;
-    top: 2.5vw;
-    width: 30vw;
+    left: 18vw;
+    top: 3vw;
+    width: 29.75vw;
     height: 3vw;
-    border: var(--loader-border-width) solid var(--color-bars-light);
+    border: 0.5vw solid var(--color-bars-light);
 }
 
 .bar-loader-corners {
@@ -272,28 +225,28 @@
     top: -1vw;
     right: -1vw;
     border: solid var(--color-bars-light);
-    border-width: var(--loader-border-width) var(--loader-border-width) 0 0;
+    border-width: 0.25vw 0.25vw 0 0;
 }
 
 .bar-loader-corners div:nth-last-of-type(2) {
     bottom: -1vw;
     left: -1vw;
     border: solid var(--color-bars-light);
-    border-width: 0 0 var(--loader-border-width) var(--loader-border-width);
+    border-width: 0 0 0.25vw 0.25vw;
 }
 
 .bar-loader-corners div:nth-last-of-type(3) {
     bottom: -1vw;
     right: -1vw;
     border: solid var(--color-bars-light);
-    border-width: 0 var(--loader-border-width) var(--loader-border-width) 0;
+    border-width: 0 0.25vw 0.25vw 0;
 }
 
 .bar-loader-corners div:nth-last-of-type(4) {
     top: -1vw;
     left: -1vw;
     border: solid var(--color-bars-light);
-    border-width: var(--loader-border-width) 0 0 var(--loader-border-width);
+    border-width: 0.25vw 0 0 0.25vw;
 }
 
 .bar-loader-bar {
@@ -302,7 +255,6 @@
     left: 0%;
     bottom: 0%;
     right: 0%;
-    z-index: 10;
     margin: 0.5vw;
     background-color: var(--color-bars-light);
     animation: barFill 4s forwards infinite ease-out;
@@ -310,17 +262,17 @@
 
 .bars-left {
     position: absolute;
-    top: var(--bars-left-top);
-    left: var(--bars-left-left);
+    top: 28.75vw;
+    left: 0;
 }
 
-.glowBar-left-top-lower {
+.bars-left .glowBarBase:nth-child(1) {
     left: -6.6vw;
     width: 20vw;
     transform: rotateZ(-45deg);
 }
 
-.glowBar-left-bottom {
+.bars-left .glowBarBase:nth-child(2) {
     top: 2.25vw;
     left: -6.6vw;
     width: 20vw;
@@ -329,59 +281,121 @@
 
 .glowBar-bottom {
     position: absolute;
-    left: var(--bottom-bars-left);
-    top: var(--bottom-bars-top);
+    left: 70vw;
+    top: 37.5vw;
     width: 1px;
     height: 13.5vw;
+    z-index: var(--z-graphics);
 }
 
-.glowBar-bottom-glowBar {
-    top: 6vw;
-    left: -6vw;
-    width: 12vw;
+.glowBar-bottom .glowBarBase {
+    top: 6.5vw;
+    left: -6.5vw;
+    width: 13vw;
     transform: rotateZ(90deg);
 }
 
-.blip-glowbar-bottom {
+.glowBar-bottom .blip-slide {
     position: absolute;
-    bottom: 0;
     left: -1vw;
-    width: 2vw;
-    height: 2vw;
-    background-color: var(--color-bars-light);
-    border-radius: 50%;
-    z-index: 3;
+    animation: blip-slide 3s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.blip-glowbar-bottom::after {
-    animation-delay: 0.5s;
+.glowBar-bottom .blip {
+    position: absolute;
+    left: 0vw;
+    animation: blip-grow 3s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glowBar-bottom .blip::after {
+    animation-duration: 3s;
 }
 
-@media only screen and (max-width: 720px) {
-    :root {
-        --heading-size: 12vw;
-
+@media only screen and (max-width: 750px) {
+    .hero-content h2 {
+        font-size: 8vw;
     }
-}
-
-@media only screen and (min-width: 1680px) {
-    :root {
-    --bars-top-top: 5.25vw;
-    --bars-top-left: 24vw;
-
-    --bars-middle-top: 23vw;
-    --bars-middle-left: 21vw;
-
-    --bars-left-top: 28.75vw;
-    --bars-left-left: 0vw;
-    
-    --bottom-bars-top: 68vh;
-    --bottom-bars-left: 80vw;
+    .hero-content h3 {
+        font-size: 4vw;
+        width: 50%;
     }
-
-    .section-hero {
-        /*
+    /*
+    .hero-graphics {
         background-color: orange;
-        */
     }
+    */
+    .glowBar-top {
+        left: 7vw;
+        width: 22vw;
+    }
+    
+    .bar-glowbar-top-to-blip {
+        left: 29vw;
+        width: 2.75vw;
+        transform: rotate(45deg);
+    }
+    .bar-glowbar-top-to-blip > div {
+        width: 7vw;
+    }
+    .bars-top .blip {
+        left: 36vw;
+        top: 1vw;
+    }
+
+    .bars-left {
+        top: 35vw;
+        left: -5vw;
+    }
+
+    .bars-middle {
+        top: 33vw;
+        left: 10vw;
+    }
+
+    .bars-middle .blip {
+        left: 5vw;
+    }
+
+    .bars-middle .blip > div {
+        width: 5vw;
+    }
+
+    .bars-middle .blip > div > div > div {
+        width: 30vw;
+    }
+
+    .bars-middle .battery {
+        top: -2.30vw;
+        left: 42vw;
+    }
+
+    .bar-battery-to-ring {
+        left: 48vw;
+    }
+    
+    .graphic-rings {
+        right: -14vw;
+        top: -27vw;
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .glowBar-bottom {
+        top: 35vw;
+        left: 86vw;
+        height: 30vw;
+    }
+
+    .glowBar-bottom .glowBarBase {
+        top: 15vw;
+        left: -15vw;
+        width: 30vw;
+        transform: rotateZ(90deg);
+    }
+
 }

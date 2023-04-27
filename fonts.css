@@ -26,29 +26,90 @@
 @font-face {
     font-family: 'Museo-Bold';
     src:
-        url('./Fonts/MuseoSans_700.otf');
-    font-weight: 700
+        url('./Fonts/Museo/MuseoSans_700.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Museo-BoldItal';
+    src:
+        url('./Fonts/Museo/MuseoSans_700 Italic.ttf');
+    font-weight: 700;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Museo-Med';
     src:
-        url('./Fonts/MuseoSans_500.otf');
-    font-weight: 500
+        url('./Fonts/Museo/MuseoSans_500.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Museo-MedItal';
+    src:
+        url('./Fonts/Museo/MuseoSans_500 Italic.otf');
+    font-weight: 500;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Museo-Light';
     src:
-        url('./Fonts/MuseoSans_300.otf');
-    font-weight: 300
+        url('./Fonts/Museo/MuseoSans_300.otf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Museo-LightItal';
+    src:
+        url('./Fonts/Museo/MuseoSans_300 Italic.ttf');
+    font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
     font-family: 'Montserrat-Bold';
     src:
-        url('./Fonts/Montserrat-Bold.ttf');
+        url('./Fonts/Montserrat/Montserrat-Bold.ttf');
     font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montserrat-Reg';
+    src:
+        url('./Fonts/Montserrat/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat-Med';
+    src:
+        url('./Fonts/Montserrat/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat-MedItal';
+    src:
+        url('./Fonts/Montserrat/Montserrat-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src:
+        url('./Fonts/Montserrat/Montserrat-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat-LightItal';
+    src:
+        url('./Fonts/Montserrat/Montserrat-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
 }
 
 .pragmatica-r {
@@ -67,10 +128,50 @@
     font-family: 'Pragmatica-Light-Oblique';
 }
 
-.museo {
-    font-family: 'Museo';
+.museo-b {
+    font-family: 'Museo-Bold';
 }
 
-.montserrat {
-    font-family: 'Montserrat';
+.museo-bi {
+    font-family: 'Museo-BoldItal';
+}
+
+.museo-m {
+    font-family: 'Museo-Med';
+}
+
+.museo-mi {
+    font-family: 'Museo-MedItal';
+}
+
+.museo-l {
+    font-family: 'Museo-Light';
+}
+
+.museo-li {
+    font-family: 'Museo-LightItal';
+}
+
+.montserrat-b {
+    font-family: 'Montserrat-Bold';
+}
+
+.montserrat-r {
+    font-family: 'Montserrat-Reg';
+}
+
+.montserrat-m {
+    font-family: 'Montserrat-Med';
+}
+
+.montserrat-mi {
+    font-family: 'Montserrat-MedItal';
+}
+
+.montserrat-l {
+    font-family: 'Montserrat-Light';
+}
+
+.montserrat-li {
+    font-family: 'Montserrat-LightItal';
 }
