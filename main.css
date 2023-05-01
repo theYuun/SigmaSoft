@@ -739,8 +739,10 @@ button img {
 }
 
 .hero-content h3 {
+    position: relative;
     margin-top: 13vw;
     letter-spacing: -0.03vw;
+    width: fit-content;
 }
 
 .hero-content h3 > span {
@@ -815,8 +817,6 @@ button img {
     top: 1vw;
     width: 2vw;
     height: 2vw;
-    background-color: var(--color-bars-light);
-    border-radius: 50%;
 }
 
 .graphic-rings {
@@ -980,8 +980,8 @@ button img {
 
 .bars-left {
     position: absolute;
-    top: 28.75vw;
-    left: 0;
+    top: 32vw;
+    left: -3vw;
 }
 
 .bars-left .glowBarBase:nth-child(1) {
@@ -999,8 +999,8 @@ button img {
 
 .glowBar-bottom {
     position: absolute;
-    left: 70vw;
-    top: 37.5vw;
+    right: -5vw;
+    top: 1.5vw;
     width: 1px;
     height: 13.5vw;
     z-index: var(--z-graphics);
@@ -1044,7 +1044,7 @@ button img {
     }
     /*
     .hero-graphics {
-        background-color: orange;
+        opacity: 50%;
     }
     */
     .glowBar-top {
@@ -1066,8 +1066,8 @@ button img {
     }
 
     .bars-left {
-        top: 35vw;
-        left: -5vw;
+        top: 36.5vw;
+        left: -6.5vw;
     }
 
     .bars-middle {
@@ -1101,19 +1101,12 @@ button img {
         top: -27vw;
         width: 30vw;
         height: 30vw;
+        opacity: 50%;
     }
 
     .glowBar-bottom {
-        top: 35vw;
-        left: 86vw;
-        height: 30vw;
-    }
-
-    .glowBar-bottom .glowBarBase {
-        top: 15vw;
-        left: -15vw;
-        width: 30vw;
-        transform: rotateZ(90deg);
+        top: 3vw;
+        right: -11vw;
     }
 
 }
