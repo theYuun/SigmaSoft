@@ -1,0 +1,39 @@
+.glowBar {
+    filter:
+      drop-shadow(0 0 var(--glowBar-height) #3bfff8)
+      drop-shadow(0 0 calc(var(--glowBar-height) * 0.5) #00fff7)
+      drop-shadow(0 0 calc(var(--glowBar-height) * 0.1) #838383)
+      ;
+}
+
+.glowBarGlow {
+    background-color: white;
+    box-shadow: inset #15f4ee 0 0 calc(var(--glowBar-height)/3) calc(var(--glowBar-height)/4);
+}
+
+.glowBarShaft {
+    position: relative;
+    height: var(--glowBar-height);
+    border-radius: var(--glowBar-height);
+}
+    
+.glowBarCapLeft, .glowBarCapRight {
+    position: absolute;
+    width: var(--glowBar-height);
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(#bdfffd 10%, #15f4ee 70%);
+}
+
+.glowBarCapLeft {
+    left: calc(0px - var(--glowBar-height)/2);
+    
+    border-radius: calc(var(--glowBar-height) * 0.5) 0 0 calc(var(--glowBar-height) * 0.5);
+  
+}
+
+.glowBarCapRight {
+    right: calc(0px - var(--glowBar-height)/2);
+
+    border-radius: 0 calc(var(--glowBar-height) * 0.5) calc(var(--glowBar-height) * 0.5) 0;
+}

@@ -1,0 +1,21 @@
+.reference {
+    position: absolute;
+    isolation: isolate;
+    top: -32px;
+    left: 0;
+    display: none;
+    /*
+    */
+    isolation: isolate;
+    z-index: 10000;
+}
+
+.reference img {
+    opacity: 1;
+    opacity: 0.5;
+    width: 1337px;
+    width: 100%;
+    margin: -2.2px 0;
+    padding: 0;
+    pointer-events: none;
+}

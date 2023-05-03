@@ -1,0 +1,220 @@
+footer {
+    position: relative;
+    padding-top: 4vw;
+    padding-left: 5.5vw;
+    padding-right: 4.75vw;
+    padding-bottom: 7.5vw;
+    background-color: var(--color-background);
+}
+
+.footer-content {
+    position: relative;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    z-index: var(--z-content);
+}
+
+footer h2 {
+    align-self: flex-end;
+    width: 75%;
+    font-size: 3vw;
+    text-align: right;
+    line-height: 3.65vw;
+}
+
+.footer-content-lists {
+    width: 50vw;
+    margin-top: 11vw;
+    align-self: flex-start;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-list-block {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list-block h4 {
+    font-size: 1.25vw;
+    margin-bottom: 2vw;
+    letter-spacing: 0.2vw;
+}
+
+.footer-list-block a, .footer-list-block p {
+    font-size: 1.25vw;
+    margin-bottom: 0.5vw;
+}
+
+.footer-content-email {
+    position: relative;
+    margin-top: 8.75vw;
+    font-size: 2vw;
+    letter-spacing: 0.05vw;
+    color: var(--color-bars-mid);
+}
+.footer-content-email .blip {
+    left: -2.75vw;
+    top: 0.75vw;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+.footer-graphics {
+    position: absolute;
+    inset: 0;
+    isolation: isolate;
+    z-index: var(--z-graphics);
+}
+.footer-graphics .bar-loader {
+    position: absolute;
+    left: 88.25%;
+    top: 21.5vw;
+    width: 30vw;
+    height: 3.5vw;
+    border: var(--loader-border-width) solid var(--color-bars-light);
+}
+.footer-graphics-bars-top {
+    position: absolute;
+    right: 0;
+    top: 21vw;
+    height: 16%;
+    width: 33%;
+}
+.footer-graphics .blip {
+    top: 0;
+    left: 0;
+    width: 2vw;
+    height: 2vw;
+}
+.footer-graphics .blip > div {
+    position: absolute;
+    top: 0.75vw;
+    left: 1vw;
+    width: 13.5vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+}
+.footer-graphics .blip > div > div {
+    position: absolute;
+    top: 0vw;
+    left: 13.5vw;
+    width: 11.25vw;
+    height: 0.25vw;
+    transform-origin: left;
+    transform: rotate(45deg);
+    background-color: var(--color-bars-light);
+}
+.footer-graphics .blip > div > div > div:nth-child(1) {
+    position: absolute;
+    top: 0vw;
+    left: 8.5vw;
+    width: 12vw;
+    height: 0.25vw;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    background-color: var(--color-bars-light);
+}
+.footer-graphics .blip > div > div > div:nth-child(2) {
+    position: absolute;
+    top: 0vw;
+    left: 11.25vw;
+    width: 11.5vw;
+    height: 0.25vw;
+    transform-origin: left;
+    transform: rotate(-45deg);
+    background-color: var(--color-bars-light);
+}
+
+.footer-graphics-logo {
+    position: absolute;
+    right: 13vw;
+    bottom: 14vw;
+    height: 13.5vw;
+}
+
+.footer-graphics-bars-lower {
+    position: absolute;
+    bottom: 2.5vw;
+    right: 0;
+    width: 30.5vw;
+    height: 13.5vw;
+}
+.footer-graphics-bars-lower polygon {
+    fill: var(--color-bars-light);
+}
+
+@media screen and (max-width: 720px) {
+
+    footer {
+        overflow: hidden;
+    }
+
+    footer h2 {
+        width: 100%;
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    
+    .footer-content-lists {
+        width: 75vw;
+        margin-top: 5vw;
+        align-self: flex-start;
+    }
+    .footer-list-block {
+        padding-left: 2vw;
+        border-left: 1px solid #fff5;
+        width: 20vw;
+    }
+    .footer-list-block:nth-child(1) {
+        border-left: none;
+    }
+    
+    .footer-list-block h4 {
+        font-size: 5vw;
+    }
+    
+    .footer-list-block a, .footer-list-block p {
+        font-size: 3vw;
+    }
+
+    .footer-content-email {
+        font-size: 5vw;
+    }
+
+    .footer-graphics {
+        opacity: 0.25;
+        perspective: 200px;
+    }
+    .footer-graphics > div, .footer-graphics > svg {
+        transform: rotateY(-20deg);
+    }
+    .footer-graphics > img {
+        transform: rotateY(-40deg);
+    }
+    .footer-graphics .bar-loader {
+        top: 5vw;
+    } 
+    .footer-graphics-logo {
+        right: 20vw;
+        bottom: 30vw;
+        height: 20vw;
+    }
+
+    .footer-graphics-email-blip {
+        left: -3vw;
+        top: 2vw;
+        width: 2vw;
+        height: 2vw;
+    }
+    
+    .footer-graphics-email-blip::after {
+        width: 2vw;
+        height: 2vw;
+    }
+}

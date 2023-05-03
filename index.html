@@ -16,6 +16,8 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="main.css">
     <!--
+    <link rel="stylesheet" href="mainSass.css">
+    -->
         <link rel="stylesheet" href="nav.css">
         <link rel="stylesheet" href="hero.css">
         <link rel="stylesheet" href="results.css">
@@ -29,11 +31,10 @@
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="glowbar.css">
         <link rel="stylesheet" href="fonts.css">
-    -->
-    <!--
-
+        
         <link rel="stylesheet" href="reference.css">
-    -->
+        <!--
+        -->
 
     <title>Sigmasoft</title>
 </head>
@@ -60,9 +61,9 @@
     <section class="section-hero">
         <div class="hero-graphics" >
             <div class="bars-top">
-                <div class="glowBar-left-top glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="glowBar-left-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
                 <div class="bar-heading-to-glowBar"></div>
-                <div class="glowBar-top glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="glowBar-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
                 <div class="bar-glowbar-top-to-blip"><div></div></div>
                 <div class="blip"></div>
             </div>
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <img class="bar-battery-to-ring" src="./images/graphic-bars-battery-to-ring.svg" alt="">
-                <div class="glowBar-below-rings glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="glowBar-below-rings glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
                 <div class="graphic-rings">
                     <img class="graphic-ring-inner" src="./images/graphic-ring-inner.svg" alt="">
                     <img class="graphic-ring-small" src="./images/graphic-ring-small.svg" alt="">
@@ -97,8 +98,8 @@
                 </div>
             </div>
             <div class="bars-left">
-                <div class="graphic-bars glowBar-left-top-lower glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
-                <div class="graphic-bars glowBar-left-bottom glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="graphic-bars glowBar-left-top-lower glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="graphic-bars glowBar-left-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             </div>
         </div>
         <div class="hero-content">
@@ -106,7 +107,7 @@
             <h2 class="pragmatica-l">For More Business</h2>
             <h3 class="museo-m"><span>HUMAN-FRIENDLY</span> SOFTWARE SOLUTIONS IN AUSTRALIA
                 <div class="glowBar-bottom">
-                    <div class="glowBarBase">
+                    <div class="glowBar">
                         <div class="glowBarGlow glowBarShaft"></div>
                     </div>
                     <div class="blip-slide"><div class="blip"></div></div>
@@ -136,7 +137,7 @@
             </h3>
         </div>
         <div class="results-graphics">
-            <div class="graphic-bars results-glowBar glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+            <div class="graphic-bars results-glowBar glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             <svg viewBox="0 0 100 100" class="results-graphics-bars-svg">
                 <linearGradient id="results-graphics-svg-gradient">
                     <stop
@@ -194,8 +195,8 @@
     </section>
     <section class="section-familiar">
         <div class="familiar-graphics">
-            <div class="familiar-graphics-glowbar familiar-glowBar-top glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
-            <div class="familiar-graphics-glowbar familiar-glowBar-bottom glowBarBase"><div class="glowBarGlow glowBarShaft"></div></div>
+            <div class="familiar-graphics-glowbar familiar-glowBar-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
+            <div class="familiar-graphics-glowbar familiar-glowBar-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             <div class="familiar-graphics-bar-top"></div>
             <svg class="familiar-graphics-bar-bottom" width="50" height="8" viewBox="0 0 50 8">
                 <polygon points="0,0 50,0 50,2 40,2 35,8 0,8"></polygon>
@@ -258,6 +259,14 @@
         </div>
     </section>
     <section class="section-stressed">
+        <div class="stressed-graphics">
+            <div class="blip">
+                <div><div></div></div>
+            </div>
+            <div class="stressed-graphics-left-bar">
+                <div><div></div></div>
+            </div>
+        </div>
         <h2 class="pragmatica-r">Stressed Out? <span class="pragmatica-b">Get Tech'd Up!</span></h2>
         <h3 class="museo-l">With results-oriented best practices that align with your unique goals, we offer:</h3>
         <div class="stressed-content-blocks">
@@ -273,6 +282,9 @@
                     <li>News & Info Apps</li>
                 </ul>
                 <button class="pragmatica-b" onclick="alert('EXPLORE MOBILE')">EXPLORE MOBILE</button>
+                <div class="blip">
+                    <div><div></div></div>
+                </div>
             </div>
             <div class="stressed-content-block stressed-content-block-02">
                 <h4 class="pragmatica-b">Cloud Products</h4>
@@ -295,17 +307,6 @@
                     <li>Human-wearable Biometrics</li>
                 </ul>
                 <button class="pragmatica-b" onclick="alert('EXPLORE IoT')">EXPLORE IoT</button>
-            </div>
-        </div>
-        <div class="stressed-content-graphics">
-            <div class="stressed-content-graphics-top-blip">
-                <div><div></div></div>
-            </div>
-            <div class="stressed-content-graphics-left-bar">
-                <div><div></div></div>
-            </div>
-            <div class="stressed-content-graphics-bottom-blip">
-                <div><div></div></div>
             </div>
         </div>
     </section>
@@ -438,7 +439,7 @@
         </div>
     </footer>
     <!--
-        
+    -->
     <div class="reference">
         <img src="./images/ref/1.svg" alt="">
         <img src="./images/ref/2.svg" alt="">
@@ -451,7 +452,7 @@
         <img src="./images/ref/9.svg" alt="">
         <img src="./images/ref/10.svg" alt="">
     </div>
--->
+        
     <script type="text/javascript">
         function OpenMenu()
         {

@@ -1,0 +1,136 @@
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-background);
+    width: 100%;
+    height: var(--nav-height);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 4.7vw;
+}
+
+.nav-logo img {
+    margin-left: 0.5vw;
+    height: 4vw;
+}
+
+.nav-links {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-right: 3.5vw;
+}
+
+
+.nav-links-hamburger {
+    width: var(--nav-height);
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.open-menu {
+    right: 0vw !important;
+}
+.nav-links-hamburger div {
+    width: 5vw;
+    min-width: 30px;
+    height: 0.4vw;
+    margin: 0.5vw;
+    background-color: white;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding: 0 2vw;
+    font-size: 1.6vw;
+}
+@media only screen and (max-width: 720px) {
+    :root {
+        --hamburger-display: flex;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    
+    .nav-links-hamburger {
+        display: flex;
+    }
+    .nav-links-hamburger:hover {
+        background-color: var(--color-background-light);
+    }
+
+    .nav-links-container {
+        position: absolute;
+        right: -31vw;
+        top: 100%;
+        flex-direction: column;
+        width: 30vw;
+        transition: right 0.33s ease-in-out;
+    }
+
+    .nav-links-container a {
+        position: relative;
+        padding: 3vw 0;
+        width: 100%;
+        background-color: var(--color-background);
+        transition: background-color 0.25s ease-out;
+    }
+
+    .nav-links-container a::before, .nav-links-container a::after {
+        content: '';
+        height: 1px;
+        position: absolute;
+        background-color: var(--color-bars-light);
+        transition: --link-hover-underline 0.25s ease-out;
+    }
+    
+    .nav-links-container a::after {
+        bottom: 1.5vw;
+        left: var(--link-hover-underline);
+        right: var(--link-hover-underline-back);
+        transition:
+            right 0.5s ease-out,
+            left 0.25s ease-out;
+    }
+    
+    .nav-links-container a::before {
+        top: 1.5vw;
+        right: var(--link-hover-underline);
+        left: var(--link-hover-underline-back);
+        transition:
+            left 0.5s ease-out,
+            right 0.25s ease-out;
+    }
+
+    .nav-links-container a:hover {
+        background-color: var(--color-background-light);
+        --link-hover-underline: 20%;
+        --link-hover-underline-back: 0%;
+    }
+}

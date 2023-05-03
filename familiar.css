@@ -1,0 +1,226 @@
+.section-familiar {
+    position: relative;
+    width: 100%;
+    padding-top: 5.5vw;
+    padding-bottom: 8vw;
+    background-color: var(--color-accent-01);
+}
+
+.section-familiar h2 {
+    margin-left: 6vw;
+    font-size: 3.75vw;
+    margin-bottom: 7vw;
+}
+
+.familiar-blocks {
+    
+    width: 100%;
+    padding: 0 5.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    z-index: var(--z-content);
+}
+
+.familiar-block {
+    width: 26vw;
+    padding-top: 3vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--color-background);
+    z-index: var(--z-content);
+}
+.familiar-block img {
+    height: 30%;
+}
+.familiar-block p {
+    width: 82%;
+    font-size: 1.9vw;
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+.familiar-block-02 {
+    background-color: var(--color-accent-02);
+}
+
+.familiar-block-03 {
+    background-color: var(--color-accent-03);
+}
+
+.familiar-graphics {
+    position: absolute;
+    inset:0;
+    z-index: var(--z-graphics);
+}
+
+.familiar-glowBar-top {
+    position: absolute;
+    top: 30vw;
+    left: -1vw;
+    width: 10vw;
+    z-index: var(--z-graphics);
+}
+.familiar-glowBar-bottom{
+    position: absolute;
+    top: 35vw;
+    left: -1vw;
+    width: 50vw;
+    z-index: var(--z-graphics);
+}
+.familiar-graphics-bar-top {
+    position: absolute;
+    top: 34vw;
+    right: 0vw;
+    width: 50vw;
+    height: 0.25vw;
+    background-color: var(--color-bars-light);
+    z-index: var(--z-graphics);
+}
+.familiar-graphics-bar-bottom {
+    position: absolute;
+    top: 35vw;
+    right: -0.5vw;
+    z-index: var(--z-graphics)
+}
+
+.familiar-graphics-bar-bottom polygon {
+    fill: #17e2f7;
+    fill-opacity: 1;
+    stroke: none;
+}
+.familiar-graphics-bottom-bars {
+    position: absolute;
+    bottom: 5vw;
+    right: 0;
+    background-color: var(--color-bars-light);
+    z-index: var(--z-graphics);
+}
+.familiar-graphics-bottom-bars .blip {
+    position: absolute;
+    top: 1.5vw;
+    right: 45vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: var(--color-bars-light);
+}
+
+.familiar-graphics-bottom-bars .blip > div {
+    position: absolute;
+    top: 0.75vw;
+    left: 1.5vw;
+    height: 0.25vw;
+    width: 13.75vw;
+    transform-origin: left;
+    background-color: var(--color-bars-light);
+}
+
+.familiar-graphics-bottom-bars .blip > div > div {
+    position: absolute;
+    right: -5vw;
+    height: 0.25vw;
+    width: 5vw;
+    transform-origin: left;
+    transform: rotate(-35deg);
+    background-color: var(--color-bars-light);
+}
+
+.familiar-graphics-bottom-bars .blip > div > div > div {
+    position: absolute;
+    right: 0%;
+    height: 0.25vw;
+    width: 50vw;
+    transform-origin: right;
+    transform: rotate(215deg);
+    background-color: var(--color-bars-light);
+}
+
+.familiar-graphics-sliding-blocks {
+    position: absolute;
+    right: 28vw;
+    width: 2px;
+    height: 2px;
+    background-color: #000;
+}
+.familiar-graphics-sliding-block-slider:nth-child(1) {
+    position: absolute;
+    width: 20vw;
+}
+.familiar-graphics-sliding-block-slider:nth-child(1) > div{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vw;
+    transform: skew(-54deg);
+    background-color: var(--color-bars-light);
+    animation: skew-box-slide-01 4s both infinite ease-in-out;
+}
+.familiar-graphics-sliding-block-slider:nth-child(2) {
+    position: absolute;
+    width: 20vw;
+    left: 5.5vw;
+}
+.familiar-graphics-sliding-block-slider:nth-child(2) > div{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vw;
+    transform: skew(-54deg);
+    background-color: var(--color-bars-light);
+    animation: skew-box-slide-02 4s both infinite ease-in-out;
+}
+.familiar-graphics-sliding-block-slider:nth-child(3) {
+    position: absolute;
+    width: 20vw;
+    left: 11vw;
+}
+.familiar-graphics-sliding-block-slider:nth-child(3) > div{
+    position: absolute;
+    width: 5vw;
+    height: 2.5vw;
+    transform: skew(-54deg);
+    background-color: var(--color-bars-light);
+    animation: skew-box-slide-03 4s both infinite ease-in-out;
+}
+
+@media screen and (max-width: 720px) {
+
+    .section-familiar h2 {
+        font-size: 8vw;
+        margin-bottom:0;
+    }
+    
+    .familiar-blocks {
+        padding: 0 8vw;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .familiar-block {
+        width: 100%;
+        margin-top: 7vw;
+        padding: 7vw;
+    }
+    .familiar-block img {
+        width: 30vw;
+    }
+    .familiar-block p {
+        font-size: 5vw;
+    }
+    .familiar-glowBar-top {
+        top: 40vw;
+    }
+    .familiar-glowBar-bottom{
+        top: 45vw;
+    }
+    .familiar-graphics-bar-top {
+        top: 230vw;
+    }
+    .familiar-graphics-bar-bottom {
+        top: 232vw;
+    }
+}

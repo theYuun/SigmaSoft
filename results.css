@@ -1,0 +1,139 @@
+.section-results {
+    position: relative;
+    padding: 5.4vw 0;
+    background-color: var(--color-background);
+}
+
+.results-content {
+    position: relative;
+    padding-left: 5.5vw;
+    z-index: 10;
+}
+
+.results-content h2{
+    margin-top: -1vw;
+    font-size: 4vw;
+    letter-spacing: -0.15vw;
+}
+
+.results-content em {
+    font-size: 2.5vw;
+    letter-spacing: 0.06vw;
+}
+
+.results-content p {
+    width: 61.5vw;
+    line-height: 2.5vw;
+    margin-top: 2.4vw;
+}
+
+.results-content h3 {
+    font-size: 1.6vw;
+    letter-spacing: 0.15vw;
+    position: relative;
+    margin-top: 5vw;
+}
+
+.results-content .blip {
+    left: -3.5vw;
+}
+
+.results-graphics {
+    position: absolute;
+    top: 18.5vw;
+    bottom: 0;
+    right: 0;
+    width: 20vw;
+    z-index: 0;
+    background-color: #000f;
+}
+
+.results-graphics-bars-svg {
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+}
+
+.results-graphics-bars-bottom {
+    height: 100%;
+    background: linear-gradient(to right, var(--color-accent-01) 33%, var(--color-accent-02) 33.1%, var(--color-accent-02) 66%, var(--color-accent-03) 66.1%, var(--color-accent-03) 100%)
+}
+
+.results-glowBar {
+    position: absolute;
+    width: 36.5vw;
+    bottom: -0.5vw;
+    transform-origin: 0% 50%;
+    transform: rotateZ(270deg);
+    z-index: 1;
+}
+
+.section-results button {
+    position: absolute;
+    bottom: 4.5vw;
+    height: 3vw;
+    right: 10.5vw;
+    width: 19vw;
+}
+.section-results button p {
+    letter-spacing: -0.033vw;
+}
+
+@media only screen and (max-width: 720px){
+    .results-content {
+        position: relative;
+        padding-left: 8vw;
+        z-index: 10;
+    }
+    
+    .results-content h2{
+        letter-spacing: 0.3vw;
+    }
+    
+    .results-content em {
+
+        letter-spacing: 0.1vw;
+    }
+    
+    .results-content p {
+        line-height: 3.5vw;
+    }
+
+    .results-content h3 {
+        font-size: 3vw;
+        width: 50%;
+    }
+    
+    .results-content .blip {
+        left: -5vw;
+        top: 0.5vw;
+        width: 3vw;
+        height: 3vw;
+    }
+    .results-content .blip::after {
+        width: 3vw;
+        height: 3vw;
+        left: 0vw;
+    }
+
+    .results-graphics .results-glowBar {
+        position: absolute;
+        width: 64vw;
+        bottom: -0.5vw;
+        transform-origin: 0% 50%;
+        transform: rotateZ(270deg);
+        z-index: 1;
+    }
+
+    .section-results button {
+        position: absolute;
+        bottom: 8vw;
+        height: 5vw;
+        right: 10.5vw;
+        width: 25vw;
+    }
+    .section-results button p {
+        font-size: 1.5vw;
+        letter-spacing: -0.033vw;
+    }
+}
