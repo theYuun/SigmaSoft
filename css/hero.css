@@ -69,29 +69,40 @@
 }
 
 .glowBar-top {
-    left: 7.5vw;
-    width: 42.5vw;
+    top: -0.05vw;
+    left: 7.8vw;
+    width: 42.325vw;
 }
 
+.bar-glowbar-top-to-blip-svg {
+    position: absolute;
+    top: 0;
+    left: 50vw;
+    width: 7vw;
+    height: 3.2vw;
+    transform-origin: left;
+}
 .bar-glowbar-top-to-blip {
     position: absolute;
     top: 0;
     left: 50vw;
     width: 2.75vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
+    height: var(--bar-height);
+    background-color: #0005;
     transform-origin: left;
     transform: rotate(45deg);
+    border-radius: var(--bar-border-radius);
 }
 .bar-glowbar-top-to-blip > div {
     position: absolute;
-    top: vw;
+    top: 0vw;
     left: 100%;
     width: 5vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
+    height: var(--bar-height);
+    background-color: #0005;
     transform-origin: left;
     transform: rotate(-45deg);
+    border-radius: var(--bar-border-radius);
 }
 
 .bars-top .blip {
@@ -146,54 +157,34 @@
 }
 
 .bars-middle .blip {
-    left: 0;
-    top: 4.75vw;
+    left: -0.5vw;
+    top: 5.6vw;
 }
-.bars-middle .blip > div {
+.bars-middle-blip-to-battery-svg {
     position: absolute;
-    top: 50%;
-    left: 100%;
-    width: 10.25vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
-}
-.bars-middle .blip > div > div {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 7.5vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
+    top: -4.2vw;
+    left: 2vw;
+    width: 40.5vw;
+    height: 5.3vw;
     transform-origin: left;
-    transform: rotate(-45deg);
-}
-.bars-middle .blip > div > div > div {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 25vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
-    transform-origin: left;
-    transform: rotate(45deg);
 }
 
 .bars-middle .battery {
-    top: -2.25vw;
-    left: 41vw;
+    top: -1.3vw;
+    left: 41.5vw;
     width: 6vw;
     height: 3vw;
 }
 
 .bar-battery-to-ring {
-    left: 46.5vw;
-    top: -1vw;
-    width: 18vw;
+    left: 47.25vw;
+    top: 0.25vw;
+    width: 17.5vw;
 }
 
 .glowBar-below-rings {
-    bottom: 0.4vw;
-    right: -1.75vw;
+    bottom: -0.4vw;
+    right: -0.75vw;
     width: 2.5vw;
     transform-origin: left;
     transform: rotateZ(-90deg);
@@ -204,78 +195,27 @@
     top: 3vw;
     width: 29.75vw;
     height: 3vw;
-    border: 0.5vw solid var(--color-bars-light);
-}
-
-.bar-loader-corners {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-}
-
-.bar-loader-corners div {
-    position: absolute;
-    width: 1.5vw;
-    height: 1.5vw;
-}
-
-.bar-loader-corners div:nth-last-of-type(1) {
-    top: -1vw;
-    right: -1vw;
-    border: solid var(--color-bars-light);
-    border-width: 0.25vw 0.25vw 0 0;
-}
-
-.bar-loader-corners div:nth-last-of-type(2) {
-    bottom: -1vw;
-    left: -1vw;
-    border: solid var(--color-bars-light);
-    border-width: 0 0 0.25vw 0.25vw;
-}
-
-.bar-loader-corners div:nth-last-of-type(3) {
-    bottom: -1vw;
-    right: -1vw;
-    border: solid var(--color-bars-light);
-    border-width: 0 0.25vw 0.25vw 0;
-}
-
-.bar-loader-corners div:nth-last-of-type(4) {
-    top: -1vw;
-    left: -1vw;
-    border: solid var(--color-bars-light);
-    border-width: 0.25vw 0 0 0.25vw;
-}
-
-.bar-loader-bar {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    bottom: 0%;
-    right: 0%;
-    margin: 0.5vw;
-    background-color: var(--color-bars-light);
-    animation: barFill 4s forwards infinite ease-out;
 }
 
 .bars-left {
+    visibility: visible;
     position: absolute;
-    top: 32vw;
+    top: 32.25vw;
     left: -3vw;
 }
 
-.bars-left .glowBarBase:nth-child(1) {
+.bars-left .glowBar:nth-child(1) {
+    visibility: visible;
     left: -6.6vw;
-    width: 20vw;
+    width: 21vw;
     transform: rotateZ(-45deg);
 }
 
-.bars-left .glowBarBase:nth-child(2) {
-    top: 2.25vw;
+.bars-left .glowBar:nth-child(2) {
+    visibility: visible;
+    top: 2vw;
     left: -6.6vw;
-    width: 20vw;
+    width: 21vw;
     transform: rotateZ(-45deg);
 }
 
@@ -316,6 +256,20 @@
     animation-duration: 3s;
 }
 
+@media only screen and (min-width: 1000px) {
+    
+    .bars-left {
+        visibility: hidden;
+    }
+    .bars-left .glowBar:nth-child(1){
+        visibility: hidden;
+    }
+    .bars-left .glowBar:nth-child(2) {
+        visibility: hidden;
+    }
+        
+}
+
 @media only screen and (max-width: 720px) {
     .hero-content h2 {
         font-size: 8vw;
@@ -325,21 +279,17 @@
         width: 50%;
     }
     .glowBar-top {
-        left: 7vw;
-        width: 22vw;
+        left: 7.75vw;
+        width: 21.25vw;
     }
     
-    .bar-glowbar-top-to-blip {
+    .bar-glowbar-top-to-blip-svg {
         left: 29vw;
-        width: 2.75vw;
-        transform: rotate(45deg);
-    }
-    .bar-glowbar-top-to-blip > div {
-        width: 7vw;
+        height: 3.4vw;
     }
     .bars-top .blip {
         left: 36vw;
-        top: 1vw;
+        top: 1.25vw;
     }
 
     .bars-left {
@@ -353,24 +303,26 @@
     }
 
     .bars-middle .blip {
+        top: 5vw;
         left: 5vw;
     }
-
-    .bars-middle .blip > div {
-        width: 5vw;
-    }
-
-    .bars-middle .blip > div > div > div {
-        width: 30vw;
+    .bars-middle-blip-to-battery-svg {
+        top: -3.7vw;
+        width: 35.25vw;
     }
 
     .bars-middle .battery {
-        top: -2.30vw;
+        top: -1.2vw;
         left: 42vw;
     }
 
     .bar-battery-to-ring {
         left: 48vw;
+        width: 17vw;
+    }
+
+    .glowBar-below-rings {
+        bottom: -0.2vw;
     }
     
     .graphic-rings {
@@ -379,6 +331,11 @@
         width: 30vw;
         height: 30vw;
         opacity: 50%;
+    }
+
+    .bar-loader {
+        left: 20vw;
+        width: 27.75vw;
     }
 
     .glowBar-bottom {

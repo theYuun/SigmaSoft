@@ -6,6 +6,11 @@
     background-color: var(--color-accent-01);
 }
 
+.familiar-content {
+    position: relative;
+    inset: 0;
+}
+
 .section-familiar h2 {
     margin-left: 6vw;
     font-size: 3.75vw;
@@ -25,7 +30,7 @@
 
 .familiar-block {
     width: 26vw;
-    padding-top: 3vw;
+    padding: 3vw 0;
     
     display: flex;
     flex-direction: column;
@@ -65,11 +70,18 @@
     width: 10vw;
     z-index: var(--z-graphics);
 }
+.familiar-glowBar-middle {
+    position: absolute;
+    top: 35vw;
+    left: 30vw;
+    width: 10vw;
+    z-index: var(--z-graphics);
+}
 .familiar-glowBar-bottom{
     position: absolute;
     top: 35vw;
     left: -1vw;
-    width: 50vw;
+    width: 10vw;
     z-index: var(--z-graphics);
 }
 .familiar-graphics-bar-top {
@@ -77,75 +89,50 @@
     top: 34vw;
     right: 0vw;
     width: 50vw;
-    height: 0.25vw;
+    height: 0.3vw;
     background-color: var(--color-bars-light);
     z-index: var(--z-graphics);
 }
-.familiar-graphics-bar-bottom {
+.familiar-graphics-bar-top > div {
     position: absolute;
-    top: 35vw;
-    right: -0.5vw;
-    z-index: var(--z-graphics)
+    top: 1vw;
+    right: 0;
+    width: 2vw;
+    height: 0.45vw;
+    background-color: var(--color-bars-light);
 }
 
-.familiar-graphics-bar-bottom polygon {
-    fill: #17e2f7;
-    fill-opacity: 1;
-    stroke: none;
-}
 .familiar-graphics-bottom-bars {
     position: absolute;
-    bottom: 5vw;
+    bottom: 0;
     right: 0;
-    background-color: var(--color-bars-light);
+    width: 45vw;
+    height: 3.15vw;
     z-index: var(--z-graphics);
 }
 .familiar-graphics-bottom-bars .blip {
     position: absolute;
-    top: 1.5vw;
-    right: 45vw;
+    bottom: -0.5vw;
+    left: -1.5vw;
     width: 1.5vw;
     height: 1.5vw;
     border-radius: 50%;
     background-color: var(--color-bars-light);
 }
-
-.familiar-graphics-bottom-bars .blip > div {
+.familiar-graphics-bottom-bars > svg {
     position: absolute;
-    top: 0.75vw;
-    left: 1.5vw;
-    height: 0.25vw;
-    width: 13.75vw;
-    transform-origin: left;
-    background-color: var(--color-bars-light);
-}
-
-.familiar-graphics-bottom-bars .blip > div > div {
-    position: absolute;
-    right: -5vw;
-    height: 0.25vw;
-    width: 5vw;
-    transform-origin: left;
-    transform: rotate(-35deg);
-    background-color: var(--color-bars-light);
-}
-
-.familiar-graphics-bottom-bars .blip > div > div > div {
-    position: absolute;
-    right: 0%;
-    height: 0.25vw;
-    width: 50vw;
-    transform-origin: right;
-    transform: rotate(215deg);
-    background-color: var(--color-bars-light);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .familiar-graphics-sliding-blocks {
     position: absolute;
-    right: 28vw;
+    top: 0.5vw;
+    right: 28.5vw;
     width: 2px;
     height: 2px;
-    background-color: #000;
 }
 .familiar-graphics-sliding-block-slider:nth-child(1) {
     position: absolute;
@@ -186,6 +173,13 @@
     animation: skew-box-slide-03 4s both infinite ease-in-out;
 }
 
+@media only screen and (min-width: 1000px) {
+    
+    .familiar-glowBar-top, .familiar-glowBar-bottom {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 720px) {
 
     .section-familiar h2 {
@@ -222,5 +216,52 @@
     }
     .familiar-graphics-bar-bottom {
         top: 232vw;
+    }
+
+    .familiar-graphics-bottom-bars {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 60vw;
+        height: 3.15vw;
+        z-index: var(--z-graphics);
+    }
+    .familiar-graphics-bottom-bars .blip {
+        position: absolute;
+        bottom: -0.5vw;
+        left: -3vw;
+        width: 3vw;
+        height: 3vw;
+        border-radius: 50%;
+        background-color: var(--color-bars-light);
+    }
+    .familiar-graphics-bottom-bars > svg {
+        position: absolute;
+        top: -2.25vw;
+        left: -11.5vw;
+        width: 150%;
+        height: 150%;
+    }
+    .familiar-graphics-sliding-blocks {
+        top: -1.5vw;
+        right: 35.5vw;
+    }
+    .familiar-graphics-sliding-block-slider:nth-child(1),
+    .familiar-graphics-sliding-block-slider:nth-child(2),
+    .familiar-graphics-sliding-block-slider:nth-child(3) {
+        width: 30vw;
+    }
+    .familiar-graphics-sliding-block-slider:nth-child(2) {
+        left: 11vw;
+    }
+    .familiar-graphics-sliding-block-slider:nth-child(3) {
+        left: 22vw;
+    }
+        
+    .familiar-graphics-sliding-block-slider:nth-child(1) > div,
+    .familiar-graphics-sliding-block-slider:nth-child(2) > div,
+    .familiar-graphics-sliding-block-slider:nth-child(3) > div{
+        width: 10vw;
+        height: 4vw;
     }
 }

@@ -1,0 +1,141 @@
+body {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: none;
+    background-color: var(--color-background);
+    overflow-x: hidden;
+}
+
+iframe {
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: -2px;
+    background-color: var(--color-background);
+    /*
+    */
+}
+.iframe-shadow {
+    position: absolute;
+    inset: 0;
+    left: 5px;
+    right: 5px;
+    z-index: -2;
+    box-shadow: 0 0 10px 0px #0008;
+}
+.iframe-shadow::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: 5px;
+    right: 5px;
+    box-shadow: 0 0 30px 20px #0005;
+}
+
+.frame-graphics {
+    position: relative;
+}
+
+.frame-graphics svg {
+    position: absolute;
+    left: -50px;
+    width: 1100px;
+    /*
+    background-color: #f005;
+    */
+}
+.svg-hero {
+    top: 400px;
+    height: 200px;
+    z-index: -1;
+}
+.glowBars-hero {
+    position: absolute;
+    top: 370px;
+    left: -30px;
+}
+.glowBars-hero .glowBar-top {
+    width: 130px;
+    transform: rotateZ(-45deg);
+}
+.glowBars-hero .glowBar-bottom {
+    top: 20px;
+    width: 130px;
+    transform: rotateZ(-45deg);
+}
+
+.svg-together {
+    top: 1368px;
+    height: 238px;
+    z-index: -1;
+}
+
+.svg-familiar-01 {
+    top: 1922px;
+    height: 55px;
+    z-index: -1;
+}
+.glowBars-familiar {
+    position: absolute;
+    top: 1922px;
+    left: -30px;
+}
+.glowBars-familiar::after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 85px;
+    width: 12px;
+    height: 80px;
+    background-color: var(--color-background);
+}
+.glowBars-familiar .glowBar-top {
+    left: 20px;
+    width: 70px;
+}
+.glowBars-familiar .glowBar-bottom {
+    left: 20px;
+    width: 70px;
+    top: 50px;
+}
+
+.svg-familiar-02 {
+    top: 2164px;
+    height: 100px;
+    z-index: 1;
+}
+.svg-familiar-02 rect {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.svg-stressed {
+    top: 2949px;
+    height: 372px;
+    z-index: -1;
+}
+
+.svg-freedom {
+    top: 4020px;
+    height: 500px;
+    z-index: -1;
+    /*
+    */
+}
+
+.svg-footer {
+    top: 5100px;
+    height: 500px;
+    z-index: -1;
+    /*
+    */
+}
+
+@media screen and (max-width: 1014px) {
+    .frame-graphics {
+        display: none;
+    }
+}

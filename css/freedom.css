@@ -17,6 +17,7 @@
 
 .freedom-content-blocks {
     padding-left: 4vw;
+    margin-bottom: 6vw;
     display: flex;
     flex-direction: column;
     gap: 2vw;
@@ -44,9 +45,9 @@
 }
 
 .freedom-content button {
-    position: relative;
-    margin-top: 3.5vw;
-    margin-left: 80.5%;
+    position: absolute;
+    right: 5.5vw;
+    bottom: 3vw;
     width: 17.5vw;
     height: 4vw;
     border: none;
@@ -74,24 +75,23 @@
     bottom: 0;
     left: 0;
     width: 5.5vw;
+    background-color: f005;
 }
 
-.freedom-graphics-top {
+.freedom-graphics-bar-top-svg {
     position: absolute;
-    top: 10.5vw;
-    right: -3.75vw;
-
-    transform: rotate(90deg);
-    height: 6vw;
+    top: 8.5vw;
+    left: 0;
+    width: 5.5vw;
+    height: 12.5vw;
 }
-
-.freedom-graphics-bottom {
+.freedom-graphics-bar-bottom-svg {
     position: absolute;
-    bottom: 6vw;
-    right: -3.75vw;
-
-    transform: rotate(90deg) scaleX(-1);
-    height: 6vw;
+    bottom: 2vw;
+    left: 0;
+    width: 5.5vw;
+    height: 12.5vw;
+    transform: scaleY(-1);
 }
 
 @media screen and (max-width: 720px) {
@@ -101,6 +101,10 @@
 
     .section-freedom h2 {
         font-size: 10vw;
+    }
+
+    .freedom-content-blocks {
+        margin-bottom: 12vw;
     }
 
     .freedom-content-block {
@@ -118,5 +122,13 @@
         font-size: 5vw;
         line-height: 5vw;
     }
-
+    
+    .freedom-content button {
+        width: 34vw;
+        height: 10vw;
+    }
+    .freedom-content button p {
+        font-size: 2.5vw;
+    }
+    
 }

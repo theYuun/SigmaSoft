@@ -17,7 +17,9 @@
     --z-content: 20;
     --z-navbar: 30;
     
-    --glowBar-height: 0.5vw;
+    --glowBar-height: 0.25vw;
+    --bar-height: 2px;
+    --bar-border-radius: 1px;
 
     --nav-height: 8vw;
     --nav-link-hover-underline: 0%;
@@ -231,10 +233,6 @@
     flex: 1;
 }
 
-body {
-    overflow-x: hidden;
-}
-
 section {
     position: relative;
     width: 100%;
@@ -347,6 +345,59 @@ button img {
 }
 /* Battery End */
 
+/* Loader Bar Start */
+.bar-loader {
+    position: absolute;
+    border: var(--bar-height) solid var(--color-bars-light);
+}
+.bar-loader-corners {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+.bar-loader-corners div {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+}
+.bar-loader-corners div:nth-last-of-type(1) {
+    top: -1vw;
+    right: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: var(--bar-height) var(--bar-height) 0 0;
+}
+.bar-loader-corners div:nth-last-of-type(2) {
+    bottom: -1vw;
+    left: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: 0 0 var(--bar-height) var(--bar-height);
+}
+.bar-loader-corners div:nth-last-of-type(3) {
+    bottom: -1vw;
+    right: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: 0 var(--bar-height) var(--bar-height) 0;
+}
+.bar-loader-corners div:nth-last-of-type(4) {
+    top: -1vw;
+    left: -1vw;
+    border: solid var(--color-bars-light);
+    border-width: var(--bar-height) 0 0 var(--bar-height);
+}
+.bar-loader-bar {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    margin: 0.5vw;
+    background-color: var(--color-bars-light);
+    animation: barFill 4s forwards infinite ease-out;
+}
+/* Loader Bar End */
+
 @media screen and (max-width: 720px) {
     h1 {
         font-size: 12vw;
@@ -362,5 +413,10 @@ button img {
 
     p {
         font-size: 3vw;
+    }
+
+    .blip {
+        width: 3vw;
+        height: 3vw;
     }
 }

@@ -1,4 +1,5 @@
 .glowBar {
+    position: absolute;
     filter:
       drop-shadow(0 0 var(--glowBar-height) #3bfff8)
       drop-shadow(0 0 calc(var(--glowBar-height) * 0.5) #00fff7)

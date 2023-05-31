@@ -1,0 +1,35 @@
+:root {
+    
+    --color-background: #0a1c29;
+    --color-background-light: #13324b;
+    --color-bars-light: #17e2f7;
+    --color-bars-mid: #28a1c4;
+    --color-bars-dark: #194666;
+    --color-accent-01: #0f2a3d;
+    --color-accent-02: #143852;
+    --color-accent-03: #1e547a;
+    --color-text-default: #fefcf9;
+    
+    --animation-blip-scale: 2.5;
+    
+    --z-background: 0;
+    --z-graphics: 10;
+    --z-content: 20;
+    --z-navbar: 30;
+    
+    --glowBar-height: 0.25vw;
+    --bar-height: 2px;
+    --bar-border-radius: 1px;
+
+    --nav-height: 8vw;
+    --nav-link-hover-underline: 0%;
+    --nav-link-hover-underline-back: 100%;
+}
+
+*, *::before, *::after, *:visited {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--color-text-default);
+}

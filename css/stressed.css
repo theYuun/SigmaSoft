@@ -67,6 +67,10 @@
     width: 80%;
 }
 
+.stressed-content-block li {
+    font-size: 1.3vw;
+}
+
 .stressed-content-block button {
     position: absolute;
     bottom: 2vw;
@@ -88,90 +92,44 @@
 
 .stressed-graphics .blip {
     top: 3.75vw;
-    right: 16.75vw;
+    right: 15.75vw;
     width: 2vw;
     height: 2vw;
 }
-
-.stressed-graphics .blip > div {
-    content: '';
+.stressed-graphics-bar-top-svg {
     position: absolute;
-    top: 1vw;
-    left: 2vw;
-    width: 12.5vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
-    transform-origin: left;
-}
-
-.stressed-graphics .blip > div > div {
-    content: '';
-    position: absolute;
-    top: 0;
+    top: 4.6vw;
     right: 0;
-    width: 8vw;
-    height: 0.25vw;
-    background-color: var(--color-bars-light);
-    transform-origin: right;
-    transform: rotate(225deg);
+    width: 16vw;
+    height: 4.5vw;
 }
-
-.stressed-graphics-left-bar {
+.stressed-graphics-bar-middle-svg {
     position: absolute;
-    bottom: 40%;
-    left: 7vw;
-    width: 3vw;
-    height: 0.5vw;
-    transform-origin: left;
-    transform: rotate(180deg);
-    background-color: var(--color-bars-light);
+    top: 58.5%;
+    left: 0;
+    width: 7vw;
+    height: 16.4vw;
 }
-
-.stressed-graphics-left-bar > div {
+.stressed-graphics-bar-bottom-svg {
     position: absolute;
-    bottom: 0.5vw;
-    right: 0vw;
-    width: 0.5vw;
-    height: 15.5vw;
-    transform-origin: bottom;
-    background-color: var(--color-bars-light);
-}
-
-.stressed-graphics-left-bar > div > div {
-    position: absolute;
-    top: 0;
-    left: 0.5vw;
-    width: 4.5vw;
-    height: 0.5vw;
-    transform-origin: bottom;
-    background-color: var(--color-bars-light);
+    bottom: -3vw;
+    right: -9.5vw;
+    width: 16vw;
+    height: 3vw;
+    z-index: -1;
 }
 
 .stressed-content-block-01 .blip {
     bottom: -3.5vw;
-    right: -43.5%;
+    right: -42%;
     width: 2vw;
     height: 2vw;
 }
 
-.stressed-content-block-01 .blip > div {
-    position: absolute;
-    bottom: 0.75vw;
-    right: 2vw;
-    width: 16vw;
-    height: 0.5vw;
-    transform-origin: right;
-    background-color: var(--color-bars-light);
-}
-
-.stressed-content-block-01 .blip > div > div {
-    position: absolute;
-    bottom: 0.5vw;
-    left: 0;
-    width: 0.5vw;
-    height: 2.25vw;
-    transform-origin: bottom;
-    background-color: var(--color-bars-light);
+@media screen and (max-width: 1280px) {
+    .stressed-content-block li {
+        font-size: 1.5vw;
+    }
 }
 
 @media screen and (max-width: 720px) {
@@ -222,17 +180,28 @@
         font-size: 2.5vw;
     }
 
-    .stressed-content-graphics-top-blip {
-        position: absolute;
-        top: 16.75vw;
-        right: 20.75vw;
-        width: 2vw;
-        height: 2vw;
-        border-radius: 50%;
-        background-color: var(--color-bars-light);
+    .stressed-graphics .blip {
+        top: 17vw;
+        right: 15vw;
+        width: 3vw;
+        height: 3vw;
     }
-
-    .stressed-content-graphics-top-blip > div {
-        width: 17vw;
+    .stressed-graphics-bar-top-svg {
+        top: 18.3vw;
+    }
+    .stressed-graphics-bar-middle-svg {
+        top: 58.5%;
+    }
+    .stressed-graphics-bar-bottom-svg {
+        bottom: -2vw;
+        right: -1.5vw;
+        width: 16vw;
+        height: 3vw;
+    }
+    .stressed-content-block-01 .blip {
+        bottom: -2.85vw;
+        right: -4.5vw;
+        width: 3vw;
+        height: 3vw;
     }
 }

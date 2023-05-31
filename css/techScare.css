@@ -63,14 +63,24 @@
     line-height: 2.25vw;
     margin-bottom: 0.5vw;
 }
-.tech-scare-content-right li::before {
-    content: ' ';
+.tech-scare-content-right li > div {
     position: absolute;
     left: -4.75vw;
-    top: 0;
-    width: 2.75vw;
-    height: 1.75vw;
-    background-color: #fff;
+    top: 0.45vw;
+    width: 2.25vw;
+    height: 1.25vw;
+    border-radius: 0.1vw;
+    background-color: var(--color-bars-light);
+}
+.tech-scare-content-right li > div::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 0.3vw;
+    bottom: 0.3vw;
+    width: 0.25vw;
+    border-radius: 0 0.1vw 0.1vw 0;
+    background-color: var(--color-bars-light);
 }
 
 .tech-scare-content-right button {
@@ -124,9 +134,16 @@
         text-align: center;
         transform: none;
     }
-
-    .tech-scare-content-right li::before {
-        top: 1vw;
+    .tech-scare-content-right li > div {
+        left: -5vw;
+        width: 3.5vw;
+        height: 2vw;
+        top: 0.9vw;
+    }
+    .tech-scare-content-right li > div::after {
+        top: 0.45vw;
+        bottom: 0.45vw;
+        width: 0.3vw;
     }
 
     .tech-scare-content-right button {

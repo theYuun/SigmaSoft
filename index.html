@@ -1,463 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- fonts -->
-
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <!-- stylesheets -->
-    <link rel="stylesheet" href="main.css">
-    <!--
-    <link rel="stylesheet" href="mainSass.css">
-    -->
-        <link rel="stylesheet" href="nav.css">
-        <link rel="stylesheet" href="hero.css">
-        <link rel="stylesheet" href="results.css">
-        <link rel="stylesheet" href="together.css">
-        <link rel="stylesheet" href="familiar.css">
-        <link rel="stylesheet" href="techScare.css">
-        <link rel="stylesheet" href="stressed.css">
-        <link rel="stylesheet" href="harness.css">
-        <link rel="stylesheet" href="freedom.css">
-        <link rel="stylesheet" href="clients.css">
-        <link rel="stylesheet" href="footer.css">
-        <link rel="stylesheet" href="glowbar.css">
-        <link rel="stylesheet" href="fonts.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <link rel="stylesheet" href="reference.css">
-        <!--
-        -->
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
 
-    <title>Sigmasoft</title>
-</head>
-<body>
-    <nav class="nav museo-m">
-        <div class="nav-logo">
-            <img src="./images/logoPart-01.svg" alt="" class="nav-logo-01">
-            <img src="./images/logoPart-02.svg" alt="" class="nav-logo-02">
-        </div>
-        <div class="spacer"></div>
-        <div class="nav-links">
-            <div class="nav-links-hamburger" onclick="OpenMenu()">
-                <div></div>
-                <div></div>
-                <div></div>
+        <!-- styles -->
+        <link rel="stylesheet" href="./css/resetFrame.css">
+        <link rel="stylesheet" href="./css/frame.css">
+        <link rel="stylesheet" href="./css/nav.css">
+        <link rel="stylesheet" href="./css/glowbar.css">
+        <link rel="stylesheet" href="./css/fonts.css">
+        <title>Sigmasoft</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-logo">
+                <img src="./images/logoPart-01.svg" alt="" class="nav-logo-01">
+                <img src="./images/logoPart-02.svg" alt="" class="nav-logo-02">
             </div>
-            <div class="nav-links-container">
-                <a href="#" class="nav-links-services">SERVICES</a>
-                <a href="#" class="nav-links-about">ABOUT</a>
-                <a href="#" class="nav-links-contact">CONTACT</a>
+            <div class="spacer"></div>
+            <div class="nav-links">
+                <div class="nav-links-hamburger" onclick="OpenMenu()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nav-links-container">
+                    <a href="#" class="nav-links-services museo-m">SERVICES</a>
+                    <a href="#" class="nav-links-about museo-m">ABOUT</a>
+                    <a href="#" class="nav-links-contact museo-m">CONTACT</a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <section class="section-hero">
-        <div class="hero-graphics" >
-            <div class="bars-top">
-                <div class="glowBar-left-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-                <div class="bar-heading-to-glowBar"></div>
+        </nav>
+        <div class="frame-graphics">
+            <svg class="svg-hero" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        -205 7,
+                        -214 15,
+                        -214 60,
+                        -190 84,
+                        -190 82,
+                        -205 66">
+                </polygon>
+            </svg>
+            <svg class="svg-together" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        -160 0,
+                        -172 12, 
+                        -172 59.5, 
+                        -166.5 66, 
+                        -166.5 97, 
+                        -163 100, 
+                        -140 100, 
+                        -140 98.5, 
+                        -162.5 98.5, 
+                        -165 96.5, 
+                        -165 65.5, 
+                        -170.5 59, 
+                        -170.5 19, 
+                        -153 0, 
+                        -154.5 0, 
+                        -170.5 16.5, 
+                        -170.5 12.5, 
+                        -165 7, 
+                        -158 0">
+                </polygon>
+            </svg>
+            <svg class="svg-familiar-01" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        -876 0,
+                        -900 20,
+                        -900 70,
+                        -876 96,
+                        -876 92,
+                        -876 48,
+                        -870 40,
+                        980 40,
+                        985 46,
+                        985 66,
+                        978 74,
+                        950 74,
+                        950 78,
+                        974 79,
+                        964 92,
+                        950 92,
+                        950 100,
+                        965 100,
+                        990 69,
+                        990 42,
+                        983 34,
+                        -870 34,
+                        -876 26,
+                        ">
+                </polygon>
+            </svg>
+            <svg class="svg-familiar-02" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <rect width="20" height="40" x="550" y="32" fill="#28a1c4"></rect>
+                <rect width="5" height="50" x="553" y="28" fill="#17e2f7"></rect>
+                <rect width="5" height="50" x="562" y="28" fill="#17e2f7"></rect>
+            </svg>
+            <svg class="svg-stressed" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        184 0,
+                        184 1.5,
+                        188 6,
+                        188 21,
+                        -90 21,
+                        -90 31,
+                        -94 34,
+                        -94 64,
+                        -90 67,
+                        -90 97,
+                        -88 100,
+                        -90 100,
+                        -80 100,
+                        -80 99,
+                        -89 99,
+                        -87.5 99,
+                        -89 97,
+                        -89 66,
+                        -93 63,
+                        -93 35,
+                        -89 32,
+                        -89 22,
+                        189 22,
+                        189 5.5,
+                        ">
+                </polygon>
+            </svg>
+            <svg class="svg-freedom" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        -50 6,
+                        -53 3,
+                        -55 5,
+                        -55 20,
+                        -56 22,
+                        -56 82,
+                        -54 79,
+                        -54 23,
+                        -52 19,
+                        -52 9.5,
+                        -50 11.5,
+                        ">
+                </polygon>
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        -55 83,
+                        -55 96,
+                        -53.5 98,
+                        -50 94,
+                        -50 88.5,
+                        -51 89.5,
+                        -51 20,
+                        -53 24,
+                        -53 80,
+                        ">
+                </polygon>
+            </svg>
+            <svg class="svg-footer" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
+                <polygon
+                    fill="#17e2f7"
+                    points="
+                        148 55,
+                        152 55,
+                        152 20,
+                        154 18,
+                        158 18,
+                        160 20,
+                        160 90,
+                        156 94,
+                        156 97,
+                        154 99.05,
+                        148 99.05,
+                        148 98.5,
+                        153.5 98.5,
+                        155.5 96.5,
+                        155.5 93.5,
+                        159.5 89.5,
+                        159.5 20.5,
+                        157.5 18.5,
+                        154.5 18.5,
+                        152.5 20.5,
+                        152.5 55.5,
+                        148 55.5,
+                        ">
+                </polygon>
+                <rect width="4.5" height="10" x="150" y="32" fill="#28a1c4"></rect>
+                <rect width="1" height="12" x="150.5" y="31" fill="#17e2f7"></rect>
+                <rect width="1" height="12" x="153" y="31" fill="#17e2f7"></rect>
+            </svg>
+            <div class="glowBars-hero">
                 <div class="glowBar-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-                <div class="bar-glowbar-top-to-blip"><div></div></div>
-                <div class="blip"></div>
+                <div class="glowBar-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             </div>
-            <div class="bars-middle">
-                <div class="blip">
-                    <div><div><div></div></div></div>
-                </div>
-                <div class="battery">
-                    <img src="./images/graphic-bars-battery.svg" alt="">
-                    <div class="battery-fills">
-                        <div class="battery-fill-01"></div>
-                        <div class="battery-fill-02"></div>
-                        <div class="battery-fill-03"></div>
-                    </div>
-                </div>
-                <img class="bar-battery-to-ring" src="./images/graphic-bars-battery-to-ring.svg" alt="">
-                <div class="glowBar-below-rings glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-                <div class="graphic-rings">
-                    <img class="graphic-ring-inner" src="./images/graphic-ring-inner.svg" alt="">
-                    <img class="graphic-ring-small" src="./images/graphic-ring-small.svg" alt="">
-                    <img class="graphic-ring-big" src="./images/graphic-ring-big.svg" alt="">
-                    <img class="graphic-ring-outer" src="./images/graphic-ring-outer.svg" alt="">
-                </div>
-                <div class="bar-loader">
-                    <div class="bar-loader-corners">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="bar-loader-bar"></div>
-                </div>
-            </div>
-            <div class="bars-left">
-                <div class="graphic-bars glowBar-left-top-lower glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-                <div class="graphic-bars glowBar-left-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
+            <div class="glowBars-familiar">
+                <div class="glowBar-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
+                <div class="glowBar-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             </div>
         </div>
-        <div class="hero-content">
-            <h1 class="pragmatica-b">More Time</h1>
-            <h2 class="pragmatica-l">For More Business</h2>
-            <h3 class="museo-m"><span>HUMAN-FRIENDLY</span> SOFTWARE SOLUTIONS IN AUSTRALIA
-                <div class="glowBar-bottom">
-                    <div class="glowBar">
-                        <div class="glowBarGlow glowBarShaft"></div>
-                    </div>
-                    <div class="blip-slide"><div class="blip"></div></div>
-                </div>
-            </h3>
-        </div>
-    </section>
-    <section class="section-results">
-        <div class="results-content museo-l">
-            <h2 class="pragmatica-b">Smarter. Faster. Better.</h2>
-            <em class="museo-l">Same Business, Radically Different Results</em>
-            <p>
-                At SigmaSoft, we create apps, websites, and programs that look good and are easy to use, while helping you stay relevant and up-to-date with your customers.
-            </p>
-            <p class="museo-li">
-                Best of all you'll have way more time to do way more business.
-            </p>
-            <p>
-                Here to contribute to the bright future of Australia through software development, our passion is boosting local businesses with robust tech that yields positive ROI.
-            </p>
-            <p>
-                Buckle up!
-            </p>
-            <h3 class="pragmatica-l">
-                <div class="blip"></div>
-                Keen to game-change your business with stellar results?
-            </h3>
-        </div>
-        <div class="results-graphics">
-            <div class="graphic-bars results-glowBar glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-            <svg viewBox="0 0 100 100" class="results-graphics-bars-svg">
-                <linearGradient id="results-graphics-svg-gradient">
-                    <stop
-                        id="sec1stop2"
-                        offset="0.33"
-                        style="stop-color:var(--color-accent-01); stop-opacity: 1;">
-                    </stop>
-                    <stop
-                        id="sec2stop1"
-                        offset="0.331"
-                        style="stop-color:var(--color-accent-02); stop-opacity: 1;">
-                    </stop>
-                    <stop
-                        id="sec2stop2"
-                        offset="0.66"
-                        style="stop-color:var(--color-accent-02); stop-opacity: 1;">
-                    </stop>
-                    <stop
-                        id="sec3stop1"
-                        offset="0.661"
-                        style="stop-color:var(--color-accent-03); stop-opacity: 1;">
-                    </stop>
-                </linearGradient>
-                <polygon fill="url(#results-graphics-svg-gradient)" points="0 100, 100 0, 100 100"></polygon>
-            </svg>
-            <div class="results-graphics-bars-bottom"></div>
-        </div>
-        <button onclick="alert('GET TO KNOW US BETTER')">
-            <p class="pragmatica-b">GET TO KNOW US BETTER</p>
-            <img src="./images/graphic-bars-battery.svg" alt="">
-        </button>
-    </section>
-    <section class="section-together">
-        <h2 class="pragmatica-b">Human-Friendly Software.</h2>
-        <h3 class="museo-mi">We'll Build, Then Grow, Your Perfect Tech Solutions - Together</h3>
-        <div class="together-content museo-l">
-            <p>Basically, our potent solutions close the gap between your operational issues and peak performance so you can better cater to your customers' needs.</p>
-            <p class="museo-li">Who doesn't want to perform at their best?</p>
-            <p>By helping you make less mistakes while upgrading and evolving your offering over time, your business diversifies, moves faster - and makes big bucks!</p>
-        </div>
-        <div class="together-graphics">
-            <div class="blip">
-                <div><div></div><div></div></div>
-            </div>
-            <div class="together-graphics-bars-lower">
-                <svg width="100" height="100" viewBox="63 0 100 100">
-                    <polygon points="0,0 2,0 2,22 78,98 230,98 230,100 62,100 0,38" />
-                </svg>
-            </div>
-        </div>
-        <div class="together-text-bottom museo-m">
-            <p><span>Finally</span>, show your customers what you can really do.</p>
-            <p>(Your staff will thank you too!)</p>
-        </div>
-    </section>
-    <section class="section-familiar">
-        <div class="familiar-graphics">
-            <div class="familiar-graphics-glowbar familiar-glowBar-top glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-            <div class="familiar-graphics-glowbar familiar-glowBar-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
-            <div class="familiar-graphics-bar-top"></div>
-            <svg class="familiar-graphics-bar-bottom" width="50" height="8" viewBox="0 0 50 8">
-                <polygon points="0,0 50,0 50,2 40,2 35,8 0,8"></polygon>
-            </svg>
-            <div class="familiar-graphics-bottom-bars">
-                <div class="blip"><div><div><div></div></div></div></div>
-                <div class="familiar-graphics-sliding-blocks">
-                    <div class="familiar-graphics-sliding-block-slider">
-                        <div class="familiar-graphics-sliding-block"></div>
-                    </div>
-                    <div class="familiar-graphics-sliding-block-slider">
-                        <div class="familiar-graphics-sliding-block"></div>
-                    </div>
-                    <div class="familiar-graphics-sliding-block-slider">
-                        <div class="familiar-graphics-sliding-block"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h2 class="pragmatica-b">Sound All-Too-Familiar?</h2>
-        <div class="familiar-blocks">
-            <div class="familiar-block familiar-block-01">
-                <img src="./images/graphic-familiar-01.svg">
-                <p class="museo-m">Your day-to-day operations are falling short of full potential.</p>
-                <p class="museo-m">You know you could be doing better!</p>
-            </div>
-            <div class="familiar-block familiar-block-02">
-                <img src="./images/graphic-familiar-02.svg">
-                <p class="museo-m">Your employees are in a rut, their performance, lacklustre.</p>
-                <p class="museo-m">Overall, staff morale is low.</p>
-            </div>
-            <div class="familiar-block familiar-block-03">
-                <img src="./images/graphic-familiar-03.svg">
-                <p class="museo-m">Your products &amp; services are tops!</p>
-                <p class="museo-m">But you're just not reaching your whole market.</p>
-            </div>
-        </div>
-    </section>
-    <section class="section-tech-scare">
-        <h2 class="pragmatica-b">If Tech For Your Business Scares You</h2>
-        <h3 class="museo-m">You're Not Alone.</h3>
-        <div class="tech-scare-content">
-            <div class="museo-m tech-scare-content-left">
-                <p>Most Aussie business owners, like you, fear losing business because the competition offers a better, more customer-friendly offering.</p>
-                <p>Fast-paced technology advancing in an ever-moving market compounds this, so staying competitive can feel impossible. Plus you have all those spiralling labour and input costs.</p>
-                <p>We get it - the prospect of investing in customized tech solutions in the face of this all is, well, downright daunting.</p>
-            </div>
-            <div class="tech-scare-content-right museo-l">
-                <p class="pragmatica-b tech-scare-content-right-factor">These common factors also pose a major challenge:</p>
-                <ul>
-                    <li>New tech sounds great but you don't want to lose your character with a complete overhaul</li>
-                    <li>You know you need to harness tech, but it's so far removed from your core operations that it's scary and off-putting</li>
-                    <li>Because your systems exist in silos, how on earth will you remain in control with this new tech thrown in the mix?</li>
-                </ul>
-                <button class="tech-scare-content-right-cta" onclick="alert('BOOK A CHAT');">
-                    <p class="pragmatica-b">BOOK A CHAT</p>
-                    <img src="./images/graphic-bars-battery.svg" />
-                </button>
-            </div>
-        </div>
-    </section>
-    <section class="section-stressed">
-        <div class="stressed-graphics">
-            <div class="blip">
-                <div><div></div></div>
-            </div>
-            <div class="stressed-graphics-left-bar">
-                <div><div></div></div>
-            </div>
-        </div>
-        <h2 class="pragmatica-r">Stressed Out? <span class="pragmatica-b">Get Tech'd Up!</span></h2>
-        <h3 class="museo-l">With results-oriented best practices that align with your unique goals, we offer:</h3>
-        <div class="stressed-content-blocks">
-            <div class="stressed-content-block stressed-content-block-01">
-                <h4 class="pragmatica-b">Mobile Apps</h4>
-                <p class="museo-l">Cutting-edge & industry- disrupting, our custom apps boost your digital presence</p>
-                <ul class="museo-l">
-                    <li>Lifestyle Apps</li>
-                    <li>Social Media & Entertainment Apps</li>
-                    <li>Utility Apps</li>
-                    <li>Games & Gaming Apps</li>
-                    <li>Productivity Apps</li>
-                    <li>News & Info Apps</li>
-                </ul>
-                <button class="pragmatica-b" onclick="alert('EXPLORE MOBILE')">EXPLORE MOBILE</button>
-                <div class="blip">
-                    <div><div></div></div>
-                </div>
-            </div>
-            <div class="stressed-content-block stressed-content-block-02">
-                <h4 class="pragmatica-b">Cloud Products</h4>
-                <p class="museo-l">Our innovative Cloud products & solutions enable sustainable business continuity</p>
-                <ul class="museo-l">
-                    <li>Integration with all major providers, like Azure, AWS & GCP</li>
-                    <li>Industry-standard DevOps</li>
-                    <li>Guaranteed uptime & geolocation failover protection</li>
-                </ul>
-                <button class="pragmatica-b" onclick="alert('EXPLORE CLOUD')">EXPLORE CLOUD</button>
-            </div>
-            <div class="stressed-content-block stressed-content-block-03">
-                <h4 class="pragmatica-b">IoT Services</h4>
-                <p class="museo-l">We produce user-friendly IoT solutions that solve real problems</p>
-                <ul class="museo-l">
-                    <li>Field communications & telemetry</li>
-                    <li>Voice Recognition</li>
-                    <li>Monitoring Systems & Infrastructure Sensors</li>
-                    <li>Digital Control Systems</li>
-                    <li>Human-wearable Biometrics</li>
-                </ul>
-                <button class="pragmatica-b" onclick="alert('EXPLORE IoT')">EXPLORE IoT</button>
-            </div>
-        </div>
-    </section>
-    <section class="section-harness">
-        <h2 class="pragmatica-b">By Harnessing SigmaSoft Technologies</h2>
-        <h3 class="museo-li">You Get:</h3>
-        <div class="harness-content-blocks museo-l">
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-01.svg">
-                <h4>MORE COMPETITIVENESS</h4>
-            </div>
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-02.svg">
-                <h4>INCREASED SALES</h4>
-            </div>
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-03.svg">
-                <h4>COST SAVINGS</h4>
-            </div>
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-04.svg">
-                <h4>BETTER CUSTOMER SERVICE</h4>
-            </div>
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-05.svg">
-                <h4>MORE TIME FOR MORE BUSINESS</h4>
-            </div>
-            <div class="harness-content-block">
-                <img src="./images/graphics-harness-06.svg">
-                <h4>ENHANCED UNDERSTANDING OF YOUR OWN OPERATIONS</h4>
-            </div>
-        </div>
-    </section>
-    <section class="section-freedom">
-        <h2 class="pragmatica-b">It's a Freer You.</h2>
-        <div class="freedom-content">
-            <div class="freedom-content-blocks">
-                <div class="freedom-content-block">
-                    <h3 class="pragmatica-l">More Efficient</h3>
-                    <p class="museo-l">Get more done in the day because much of what you used to do manually is now automated. Bliss!</p>
-                </div>
-                <div class="freedom-content-block">
-                    <h3 class="pragmatica-l">More Informed</h3>
-                    <p class="museo-l">Get a birds-eye-view of your systems. A view that's always up-to-date and always accurate!</p>
-                </div>
-                <div class="freedom-content-block">
-                    <h3 class="pragmatica-l">More Nimble</h3>
-                    <p class="museo-l">With us as your tech partner, you respond more quickly to evolving market conditions. Let's get you ahead of the pack!</p>
-                </div>
-            </div>
-            <button class="pragmatica-b" onclick="alert('I WANT FREEDOM')">
-                <p>I WANT FREEDOM</p>
-            </button>
-        </div>
-        <div class="freedom-graphics">
-            <img class="freedom-graphics-top" src="./images/graphic-bars-heading-to-top-glowbar.svg">
-            <img class="freedom-graphics-bottom" src="./images/graphic-bars-heading-to-top-glowbar.svg">
-        </div>
-    </section>
-    <section class="section-clients">
-        <video src="./video/clients_lpgas.mp4" playsinline="" preload="metadata" autoplay="" muted="" loop=""></video>
-        </div>
-        <h2 class="pragmatica-b">Chuffed Client</h2>
-        <h3 class="museo-li">LP Gas.</h3>
-        <p class="pragmatica-b">
-            &quot;Nothing in our business gets done without SigmaSoft's tech solution, GasKit, being installed. Moving over to IoT has been a gamechanger. We've streamlined our systems, reduced certain expenses, and become way more efficient. As a bonus, we now transact with a clientele we couldn't have before - we no longer just sell gas, we now sell a service.&quot;
-        </p>
-        <p class="pragmatica-b">
-            —Nolan Cohen, CEO, LP Gas
-        </p>
-        <div class="client-buttons">
-            <button onclick="alert('REQUEST A DEMO')">
-                <p class="pragmatica-b">REQUEST A DEMO</p>
-                <img src="./images/graphic-bars-battery.svg">
-            </button>
-            <button onclick="alert('VIEW CASE STUDY')">
-                <p class="pragmatica-b">VIEW CASE STUDY</p>
-                <img src="./images/graphic-bars-battery.svg">
-            </button>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="footer-graphics">
-            <div class="bar-loader">
-                <div class="bar-loader-corners">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="bar-loader-bar"></div>
-            </div>
-            <div class="footer-graphics-bars-top">
-                <div class="blip">
-                    <div><div><div></div><div></div></div></div>
-                </div>
-            </div>
-            <img src="./images/logoPart-01.svg" class="footer-graphics-logo">
-            <svg width="100" height="100" viewBox="63 0 100 100" class="footer-graphics-bars-lower">
-                <polygon points="0,0 2,0 2,22 78,98 230,98 230,100 62,100 0,38" />
-            </svg>
-        </div>
-        <div class="footer-content">
-            <h2 class="pragmatica-b">Your Go-To Partner in Human-Friendly Digital Transformation.</h2>
-            <div class="footer-content-lists">
-                <div class="footer-list-block">
-                    <h4 class="pragmatica-l">connect with us</h4>
-                    <a class="pragmatica-r">LinkedIn</a>
-                </div>
-                <div class="footer-list-block">
-                    <h4 class="pragmatica-l">our location</h4>
-                    <a href="https://goo.gl/maps/dx5ZaHQm7WHwxcGYA" class="pragmatica-r">
-                        <p>8/84 Wises Road</p>
-                        <p>Buderim</p>
-                        <p>QLD</p>
-                    </a>
-                </div>
-                <div class="footer-list-block">
-                    <h4 class="pragmatica-l">explore our site</h4>
-                    <a class="pragmatica-r">About Us</a>
-                    <a class="pragmatica-r">Projects</a>
-                    <a class="pragmatica-r">Services</a>
-                    <a class="pragmatica-r">Contact</a>
-                </div>
-            </div>
-            <a href="mailto:hello@sigmasoft.com" class="footer-content-email pragmatica-b">
-                <div class="blip"></div>
-                hello@sigmasoft.com
-            </a>
-        </div>
-    </footer>
-    <!--
-    -->
-    <div class="reference">
-        <img src="./images/ref/1.svg" alt="">
-        <img src="./images/ref/2.svg" alt="">
-        <img src="./images/ref/3.svg" alt="">
-        <img src="./images/ref/4.svg" alt="">
-        <img src="./images/ref/5.svg" alt="">
-        <img src="./images/ref/6.svg" alt="">
-        <img src="./images/ref/7.svg" alt="">
-        <img src="./images/ref/8.svg" alt="">
-        <img src="./images/ref/9.svg" alt="">
-        <img src="./images/ref/10.svg" alt="">
-    </div>
-        
-    <script type="text/javascript">
-        function OpenMenu()
-        {
-            document.querySelector('.nav-links-container').classList.toggle('open-menu');
-        }
-    </script>
-</body>
+        <div class="iframe-shadow"></div>
+        <iframe id="idIFrame" onLoad="iframeLoaded(this)" src="./mainSite.html" scrolling="no" frameborder="0">
+            
+        </iframe>
+        <script type="text/javascript">
+            const iFrameID = document.querySelector('.idIFrame');
+            //window.addEventListener('resize', () => iframeLoaded(iFrameID));
+            function iframeLoaded(iFrameID) {
+                console.log('iframe loaded');
+                if(iFrameID) {
+                      // here you can make the height, I delete it first, then I make it again
+                      iFrameID.height = "";
+                      iFrameID.style.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+                }   
+            }
+          </script>
+    </body>
 </html>
