@@ -5,10 +5,11 @@
     background-color: var(--color-background);
     width: 100%;
     max-width: 1000px;
-    height: var(--nav-height);
+    height: 80px;
     display: flex;
     flex-direction: row;
 }
+
 .nav::after {
     content: '';
     position: absolute;
@@ -22,22 +23,24 @@
 
 .nav-logo {
     height: 50%;
-    margin: auto;
-    display: flex;
-    align-items: center;;
-    flex-direction: row;
     margin-left: 2vw;
+    align-self: center;
+    display: flex;
+    align-items: center;
 }
 
 .nav-logo img {
     height: 100%;
 }
 
+.spacer {
+    flex: 1;
+}
+
 .nav-links {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 100%;
     margin-right: 2vw;
 }
@@ -51,10 +54,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-right: 2vw;
 }
-.open-menu {
-    right: 0vw !important;
-}
+
 .nav-links-hamburger div {
     width: 5vw;
     min-width: 30px;
@@ -67,6 +69,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
@@ -74,13 +77,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
-    padding: 0 2vw;
-    font-size: 1.6vw;
+    height: 100%;
+    padding: 0 1vw;
+    font-size: 20px;
 }
+
 @media only screen and (max-width: 720px) {
     :root {
         --hamburger-display: flex;
+    }
+
+    .nav {
+        height: 80px;
     }
 
     .nav-links {
@@ -97,16 +105,21 @@
 
     .nav-links-container {
         position: absolute;
-        right: -31vw;
-        top: 100%;
+        top: 80px;
+        left: calc(100%);
+        width: 200px;
         flex-direction: column;
-        width: 30vw;
-        transition: right 0.33s ease-in-out;
+        justify-content: flex-start;
+        transition: left 0.33s ease-in-out;
+    }
+
+    .open-menu {
+        left: calc(100% + 2vw - 200px) !important;
     }
 
     .nav-links-container a {
         position: relative;
-        padding: 3vw 0;
+        padding: 20px 0;
         width: 100%;
         background-color: var(--color-background);
         transition: background-color 0.25s ease-out;

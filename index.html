@@ -39,6 +39,7 @@
                 </div>
             </div>
         </nav>
+        <!--
         <div class="frame-graphics">
             <svg class="svg-hero" viewBox="0 0 100 100" class="bar-glowbar-top-to-blip-svg">
                 <polygon
@@ -216,13 +217,14 @@
                 <div class="glowBar-bottom glowBar"><div class="glowBarGlow glowBarShaft"></div></div>
             </div>
         </div>
+        -->
         <div class="iframe-shadow"></div>
         <iframe id="idIFrame" onLoad="iframeLoaded(this)" src="./mainSite.html" scrolling="no" frameborder="0">
             
         </iframe>
         <script type="text/javascript">
             const iFrameID = document.querySelector('.idIFrame');
-            //window.addEventListener('resize', () => iframeLoaded(iFrameID));
+            window.addEventListener('resize', () => iframeLoaded(iFrameID));
             function iframeLoaded(iFrameID) {
                 console.log('iframe loaded');
                 if(iFrameID) {
@@ -230,6 +232,11 @@
                       iFrameID.height = "";
                       iFrameID.style.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
                 }   
+            }
+            
+            function OpenMenu()
+            {
+                document.querySelector('.nav-links-container').classList.toggle('open-menu');
             }
           </script>
     </body>

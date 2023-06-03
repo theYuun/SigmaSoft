@@ -1,6 +1,6 @@
 .section-hero {
     position: relative;
-    margin-top: var(--nav-height);
+    margin-top: 80px;
     background-color: var(--color-background);
     width: 100%;
     height: auto;
